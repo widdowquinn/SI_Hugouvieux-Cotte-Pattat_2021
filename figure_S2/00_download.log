@@ -1,0 +1,742 @@
+[INFO] [pyani.scripts.pyani_script]: Processed arguments: Namespace(api_keypath=PosixPath('~/.ncbi/api_key'), batchsize=10000, citation=False, classfname='classes.txt', debug=False, disable_tqdm=False, dryrun=False, email='leighton.pritchard@strath.ac.uk', force=False, func=<function subcmd_download at 0x2b3bd148c9d8>, kraken=False, labelfname='labels.txt', logfile=PosixPath('00_download.log'), noclobber=False, outdir=PosixPath('dickeya_genomes'), retries=20, taxon='204037', timeout=10, verbose=True)
+[INFO] [pyani.scripts.pyani_script]: command-line: /mnt/shared/scratch/synology/lp40866/apps/conda/envs/pyani/bin/pyani download -v -l 00_download.log --email leighton.pritchard@strath.ac.uk -t 204037 dickeya_genomes
+[INFO] [pyani.scripts.pyani_script]: CITATION INFO
+[INFO] [pyani.scripts.pyani_script]: If you use pyani in your work, please cite the following publication:
+[INFO] [pyani.scripts.pyani_script]: 	Pritchard, L., Glover, R. H., Humphris, S., Elphinstone, J. G.,
+[INFO] [pyani.scripts.pyani_script]: 	& Toth, I.K. (2016) 'Genomics and taxonomy in diagnostics for
+[INFO] [pyani.scripts.pyani_script]: 	food security: soft-rotting enterobacterial plant pathogens.'
+[INFO] [pyani.scripts.pyani_script]: 	Analytical Methods, 8(1), 12–24. http://doi.org/10.1039/C5AY02550H
+[INFO] [pyani.scripts.pyani_script]: DEPENDENCIES
+[INFO] [pyani.scripts.pyani_script]: The authors of pyani gratefully acknowledge its dependence on
+[INFO] [pyani.scripts.pyani_script]: the following bioinformatics software:
+[INFO] [pyani.scripts.pyani_script]: 	MUMmer3: S. Kurtz, A. Phillippy, A.L. Delcher, M. Smoot, M. Shumway,
+[INFO] [pyani.scripts.pyani_script]: 	C. Antonescu, and S.L. Salzberg (2004), 'Versatile and open software
+[INFO] [pyani.scripts.pyani_script]: 	for comparing large genomes' Genome Biology 5:R12
+[INFO] [pyani.scripts.pyani_script]: 	BLAST+: Camacho C., Coulouris G., Avagyan V., Ma N., Papadopoulos J.,
+[INFO] [pyani.scripts.pyani_script]: 	Bealer K., & Madden T.L. (2008) 'BLAST+: architecture and applications.'
+[INFO] [pyani.scripts.pyani_script]: 	BMC Bioinformatics 10:421.
+[INFO] [pyani.scripts.pyani_script]: 	BLAST: Altschul, S.F., Madden, T.L., Schäffer, A.A., Zhang, J.,
+[INFO] [pyani.scripts.pyani_script]: 	Zhang, Z., Miller, W. & Lipman, D.J. (1997) 'Gapped BLAST and PSI-BLAST:
+[INFO] [pyani.scripts.pyani_script]: 	a new generation of protein database search programs.' Nucleic Acids Res.
+[INFO] [pyani.scripts.pyani_script]: 	25:3389-3402
+[INFO] [pyani.scripts.pyani_script]: 	Biopython: Cock PA, Antao T, Chang JT, Chapman BA, Cox CJ, Dalke A,
+[INFO] [pyani.scripts.pyani_script]: 	Friedberg I, Hamelryck T, Kauff F, Wilczynski B and de Hoon MJL
+[INFO] [pyani.scripts.pyani_script]: 	(2009) Biopython: freely available Python tools for computational
+[INFO] [pyani.scripts.pyani_script]: 	molecular biology and bioinformatics. Bioinformatics, 25, 1422-1423
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Downloading genomes from NCBI
+[INFO] [pyani.scripts]: Creating output directory dickeya_genomes
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Setting Entrez email address: leighton.pritchard@strath.ac.uk
+[INFO] [pyani.scripts.subcommands.subcmd_download]: API key recovered from /home/lp40866/.ncbi/api_key
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Taxon IDs received: ['204037']
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Downloading contigs for Taxon ID ['8249091', '8228131', '8227711', '8227701', '8167221', '8117491', '7277931', '7277911', '7277891', '7277861', '7270951', '7270911', '7270871', '7270841', '7170221', '7170201', '7170191', '7170181', '7170171', '7170161', '6722641', '6722571', '6720111', '5476051', '5461651', '5461641', '5461611', '5461601', '5461581', '5461571', '5461221', '5461201', '5461191', '5461181', '5460851', '5366311', '5202211', '4269241', '3939211', '2433681', '2196291', '2196281', '2162361', '2072631', '2072621', '2070001', '2068281', '2008201', '1996211', '1996201', '1992721', '1992681', '1875701', '1698431', '1677541', '1677531', '1557551', '1556591', '1547821', '1547811', '1526671', '1493921', '1493911', '1460881', '1460111', '1406231', '1002791', '750721', '740741', '711668', '711648', '711628', '711608', '711588', '711568', '711548', '711528', '711508', '711488', '711468', '711448', '711428', '711408', '701808', '700848', '689678', '689668', '689658', '689638', '688348', '686928', '686918', '686908', '686898', '663288', '617318', '614561', '564831', '562231', '553991', '553981', '431381', '431371', '339341', '265548', '249781', '241691', '235221', '225991', '225981', '220651', '212871', '164091', '106188', '67531', '44228', '44208', '41251']
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving eSummary information for UID 8249091
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving URLs for GCF_014893095.1_ASM1489309v1
+[INFO] [pyani.scripts.subcommands.subcmd_download]: MD5 hash check passed
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Label and class file entries
+	Label: e091fce9810d61640b4a55cf038de7f8	GCF_014893095.1_ASM1489309v1_genomic	D. dianthicola 67-19
+	Class: e091fce9810d61640b4a55cf038de7f8	GCF_014893095.1_ASM1489309v1_genomic	Dickeya dianthicola
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving eSummary information for UID 8228131
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving URLs for GCF_014855505.1_ASM1485550v1
+[INFO] [pyani.scripts.subcommands.subcmd_download]: MD5 hash check passed
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Label and class file entries
+	Label: 2dde05d8f94fe179eb800c700734a7e9	GCF_014855505.1_ASM1485550v1_genomic	D. paradisiaca A3967
+	Class: 2dde05d8f94fe179eb800c700734a7e9	GCF_014855505.1_ASM1485550v1_genomic	Dickeya paradisiaca
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving eSummary information for UID 8227711
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving URLs for GCF_014854775.1_ASM1485477v1
+[INFO] [pyani.scripts.subcommands.subcmd_download]: MD5 hash check passed
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Label and class file entries
+	Label: dc95411655f152700030ec7441168a42	GCF_014854775.1_ASM1485477v1_genomic	D. fangzhongdai QZH3
+	Class: dc95411655f152700030ec7441168a42	GCF_014854775.1_ASM1485477v1_genomic	Dickeya fangzhongdai
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving eSummary information for UID 8227701
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving URLs for GCF_014854755.1_ASM1485475v1
+[INFO] [pyani.scripts.subcommands.subcmd_download]: MD5 hash check passed
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Label and class file entries
+	Label: d9e26e60dafabcc82f8b2f5cec854405	GCF_014854755.1_ASM1485475v1_genomic	D. fangzhongdai LN1
+	Class: d9e26e60dafabcc82f8b2f5cec854405	GCF_014854755.1_ASM1485475v1_genomic	Dickeya fangzhongdai
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving eSummary information for UID 8167221
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving URLs for GCF_014751545.1_ASM1475154v1
+[INFO] [pyani.scripts.subcommands.subcmd_download]: MD5 hash check passed
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Label and class file entries
+	Label: 1aa9216ff644593cd1b678f6513700d7	GCF_014751545.1_ASM1475154v1_genomic	D. solani D12
+	Class: 1aa9216ff644593cd1b678f6513700d7	GCF_014751545.1_ASM1475154v1_genomic	Dickeya solani
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving eSummary information for UID 8117491
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving URLs for GCF_014642955.1_ASM1464295v1
+[INFO] [pyani.scripts.subcommands.subcmd_download]: MD5 hash check passed
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Label and class file entries
+	Label: b51fea6584cd581a88530ee58a872bc8	GCF_014642955.1_ASM1464295v1_genomic	D. fangzhongdai CGMCC 1.15464
+	Class: b51fea6584cd581a88530ee58a872bc8	GCF_014642955.1_ASM1464295v1_genomic	Dickeya fangzhongdai
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving eSummary information for UID 7277931
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving URLs for GCF_013339875.1_ASM1333987v1
+[INFO] [pyani.scripts.subcommands.subcmd_download]: MD5 hash check passed
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Label and class file entries
+	Label: 59b598bc7054791f82ac61e11092ae69	GCF_013339875.1_ASM1333987v1_genomic	D. solani IFB0695
+	Class: 59b598bc7054791f82ac61e11092ae69	GCF_013339875.1_ASM1333987v1_genomic	Dickeya solani
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving eSummary information for UID 7277911
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving URLs for GCA_013339845.1_ASM1333984v1
+[INFO] [pyani.scripts.subcommands.subcmd_download]: MD5 hash check passed
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Label and class file entries
+	Label: 2a96620d2704bf8e9542c61a503c5661	GCA_013339845.1_ASM1333984v1_genomic	D. solani IFB0487
+	Class: 2a96620d2704bf8e9542c61a503c5661	GCA_013339845.1_ASM1333984v1_genomic	Dickeya solani
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving eSummary information for UID 7277891
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving URLs for GCF_013339815.1_ASM1333981v1
+[INFO] [pyani.scripts.subcommands.subcmd_download]: MD5 hash check passed
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Label and class file entries
+	Label: 9cbb28a9730b2f050f1ee9133fbf32b5	GCF_013339815.1_ASM1333981v1_genomic	D. solani IFB0311
+	Class: 9cbb28a9730b2f050f1ee9133fbf32b5	GCF_013339815.1_ASM1333981v1_genomic	Dickeya solani
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving eSummary information for UID 7277861
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving URLs for GCF_013339795.1_ASM1333979v1
+[INFO] [pyani.scripts.subcommands.subcmd_download]: MD5 hash check passed
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Label and class file entries
+	Label: 4643c6f5e71b2e8588d3a40ac7f5e96c	GCF_013339795.1_ASM1333979v1_genomic	D. solani IFB0212
+	Class: 4643c6f5e71b2e8588d3a40ac7f5e96c	GCF_013339795.1_ASM1333979v1_genomic	Dickeya solani
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving eSummary information for UID 7270951
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving URLs for GCF_013334185.1_ASM1333418v1
+[INFO] [pyani.scripts.subcommands.subcmd_download]: MD5 hash check passed
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Label and class file entries
+	Label: c7066e5e5e4c49e54cd5da98dfbee42c	GCF_013334185.1_ASM1333418v1_genomic	D. solani IFB0421
+	Class: c7066e5e5e4c49e54cd5da98dfbee42c	GCF_013334185.1_ASM1333418v1_genomic	Dickeya solani
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving eSummary information for UID 7270911
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving URLs for GCA_013334165.1_ASM1333416v1
+[INFO] [pyani.scripts.subcommands.subcmd_download]: MD5 hash check passed
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Label and class file entries
+	Label: 2b50da9f7a18e48c6ee35eb83f7753d7	GCA_013334165.1_ASM1333416v1_genomic	D. solani IFB0417
+	Class: 2b50da9f7a18e48c6ee35eb83f7753d7	GCA_013334165.1_ASM1333416v1_genomic	Dickeya solani
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving eSummary information for UID 7270871
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving URLs for GCF_013334145.1_ASM1333414v1
+[INFO] [pyani.scripts.subcommands.subcmd_download]: MD5 hash check passed
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Label and class file entries
+	Label: 6319a40fa760dd74757b351beb9e8f17	GCF_013334145.1_ASM1333414v1_genomic	D. solani IFB0231
+	Class: 6319a40fa760dd74757b351beb9e8f17	GCF_013334145.1_ASM1333414v1_genomic	Dickeya solani
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving eSummary information for UID 7270841
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving URLs for GCF_013334125.1_ASM1333412v1
+[INFO] [pyani.scripts.subcommands.subcmd_download]: MD5 hash check passed
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Label and class file entries
+	Label: 4ed45fdbcb3b7171d388b0810e05e22f	GCF_013334125.1_ASM1333412v1_genomic	D. solani IFB0167
+	Class: 4ed45fdbcb3b7171d388b0810e05e22f	GCF_013334125.1_ASM1333412v1_genomic	Dickeya solani
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving eSummary information for UID 7170221
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving URLs for GCF_013168575.1_ASM1316857v1
+[INFO] [pyani.scripts.subcommands.subcmd_download]: MD5 hash check passed
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Label and class file entries
+	Label: 9f6b099a7158fdf44b95abad18f40ce5	GCF_013168575.1_ASM1316857v1_genomic	D. dadantii Kunimi-3
+	Class: 9f6b099a7158fdf44b95abad18f40ce5	GCF_013168575.1_ASM1316857v1_genomic	Dickeya dadantii
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving eSummary information for UID 7170201
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving URLs for GCF_013168485.1_ASM1316848v1
+[INFO] [pyani.scripts.subcommands.subcmd_download]: MD5 hash check passed
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Label and class file entries
+	Label: a0f76d7941d5d725ffd44679340e81b6	GCF_013168485.1_ASM1316848v1_genomic	D. dadantii Aka1-1
+	Class: a0f76d7941d5d725ffd44679340e81b6	GCF_013168485.1_ASM1316848v1_genomic	Dickeya dadantii
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving eSummary information for UID 7170191
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving URLs for GCF_013168455.1_ASM1316845v1
+[INFO] [pyani.scripts.subcommands.subcmd_download]: MD5 hash check passed
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Label and class file entries
+	Label: 78fea0c5abaade4b5ee679942365f993	GCF_013168455.1_ASM1316845v1_genomic	D. dadantii Yana2-2
+	Class: 78fea0c5abaade4b5ee679942365f993	GCF_013168455.1_ASM1316845v1_genomic	Dickeya dadantii
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving eSummary information for UID 7170181
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving URLs for GCF_013168465.1_ASM1316846v1
+[INFO] [pyani.scripts.subcommands.subcmd_download]: MD5 hash check passed
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Label and class file entries
+	Label: 94ec1ffdfd3b78ae02e039ed86f22930	GCF_013168465.1_ASM1316846v1_genomic	D. dadantii Housui2-1
+	Class: 94ec1ffdfd3b78ae02e039ed86f22930	GCF_013168465.1_ASM1316846v1_genomic	Dickeya dadantii
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving eSummary information for UID 7170171
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving URLs for GCF_013168475.1_ASM1316847v1
+[INFO] [pyani.scripts.subcommands.subcmd_download]: MD5 hash check passed
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Label and class file entries
+	Label: 702bae832b90d462b44e13d2930bf555	GCF_013168475.1_ASM1316847v1_genomic	D. dadantii Kousui1-1
+	Class: 702bae832b90d462b44e13d2930bf555	GCF_013168475.1_ASM1316847v1_genomic	Dickeya dadantii
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving eSummary information for UID 7170161
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving URLs for GCF_013168495.1_ASM1316849v1
+[INFO] [pyani.scripts.subcommands.subcmd_download]: MD5 hash check passed
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Label and class file entries
+	Label: 169929050859628eedb86f5c520d626c	GCF_013168495.1_ASM1316849v1_genomic	D. dadantii BI1-1
+	Class: 169929050859628eedb86f5c520d626c	GCF_013168495.1_ASM1316849v1_genomic	Dickeya dadantii
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving eSummary information for UID 6722641
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving URLs for GCF_012278555.1_ASM1227855v1
+[INFO] [pyani.scripts.subcommands.subcmd_download]: MD5 hash check passed
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Label and class file entries
+	Label: dc72358800f9a0fdf86fa6597dc7064a	GCF_012278555.1_ASM1227855v1_genomic	D. zeae CE1
+	Class: dc72358800f9a0fdf86fa6597dc7064a	GCF_012278555.1_ASM1227855v1_genomic	Dickeya zeae
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving eSummary information for UID 6722571
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving URLs for GCF_012278405.1_ASM1227840v1
+[INFO] [pyani.scripts.subcommands.subcmd_download]: MD5 hash check passed
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Label and class file entries
+	Label: afa6b0f5b099f71cc003987c38dfe37e	GCF_012278405.1_ASM1227840v1_genomic	D. zeae EC2
+	Class: afa6b0f5b099f71cc003987c38dfe37e	GCF_012278405.1_ASM1227840v1_genomic	Dickeya zeae
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving eSummary information for UID 6720111
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving URLs for GCF_012273755.1_ASM1227375v1
+[INFO] [pyani.scripts.subcommands.subcmd_download]: MD5 hash check passed
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Label and class file entries
+	Label: 48b6ffddfc8fc2841397f97b46bcc949	GCF_012273755.1_ASM1227375v1_genomic	D. sp. CFBP 2040 CFBP 2040
+	Class: 48b6ffddfc8fc2841397f97b46bcc949	GCF_012273755.1_ASM1227375v1_genomic	Dickeya sp. CFBP 2040
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving eSummary information for UID 5476051
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving URLs for GCF_009903315.1_ASM990331v1
+[INFO] [pyani.scripts.subcommands.subcmd_download]: MD5 hash check passed
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Label and class file entries
+	Label: 7ca38cef583b40af9ca59f3601681239	GCF_009903315.1_ASM990331v1_genomic	D. dadantii BI3-1
+	Class: 7ca38cef583b40af9ca59f3601681239	GCF_009903315.1_ASM990331v1_genomic	Dickeya dadantii
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving eSummary information for UID 5461651
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving URLs for GCF_009874405.1_ASM987440v1
+[INFO] [pyani.scripts.subcommands.subcmd_download]: MD5 hash check passed
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Label and class file entries
+	Label: f0b11b32dbbd5d9abe1453799d632f82	GCF_009874405.1_ASM987440v1_genomic	D. solani Sp1a
+	Class: f0b11b32dbbd5d9abe1453799d632f82	GCF_009874405.1_ASM987440v1_genomic	Dickeya solani
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving eSummary information for UID 5461641
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving URLs for GCF_009874415.1_ASM987441v1
+[INFO] [pyani.scripts.subcommands.subcmd_download]: MD5 hash check passed
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Label and class file entries
+	Label: ff75761dd08735e3fddc3309ba320afd	GCF_009874415.1_ASM987441v1_genomic	D. solani RNS10-27-2A
+	Class: ff75761dd08735e3fddc3309ba320afd	GCF_009874415.1_ASM987441v1_genomic	Dickeya solani
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving eSummary information for UID 5461611
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving URLs for GCF_009874395.1_ASM987439v1
+[INFO] [pyani.scripts.subcommands.subcmd_download]: MD5 hash check passed
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Label and class file entries
+	Label: f2cbce32649f915aaf08b1e5e9b7bed0	GCF_009874395.1_ASM987439v1_genomic	D. solani Am3a
+	Class: f2cbce32649f915aaf08b1e5e9b7bed0	GCF_009874395.1_ASM987439v1_genomic	Dickeya solani
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving eSummary information for UID 5461601
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving URLs for GCF_009874325.1_ASM987432v1
+[INFO] [pyani.scripts.subcommands.subcmd_download]: MD5 hash check passed
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Label and class file entries
+	Label: 9001531fa266a9ccb0ffa7ddd907ba87	GCF_009874325.1_ASM987432v1_genomic	D. dianthicola RNS 11-47-1-1A
+	Class: 9001531fa266a9ccb0ffa7ddd907ba87	GCF_009874325.1_ASM987432v1_genomic	Dickeya dianthicola
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving eSummary information for UID 5461581
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving URLs for GCF_009874305.1_ASM987430v1
+[INFO] [pyani.scripts.subcommands.subcmd_download]: MD5 hash check passed
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Label and class file entries
+	Label: 928e29d71ac154ba0e70b0e6990dbc2e	GCF_009874305.1_ASM987430v1_genomic	D. solani MIE35
+	Class: 928e29d71ac154ba0e70b0e6990dbc2e	GCF_009874305.1_ASM987430v1_genomic	Dickeya solani
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving eSummary information for UID 5461571
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving URLs for GCF_009874285.1_ASM987428v1
+[INFO] [pyani.scripts.subcommands.subcmd_download]: MD5 hash check passed
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Label and class file entries
+	Label: 40b8b4dba82ce40061182494a2aca610	GCF_009874285.1_ASM987428v1_genomic	D. dianthicola MIE34
+	Class: 40b8b4dba82ce40061182494a2aca610	GCF_009874285.1_ASM987428v1_genomic	Dickeya dianthicola
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving eSummary information for UID 5461221
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving URLs for GCF_009873565.1_ASM987356v1
+[INFO] [pyani.scripts.subcommands.subcmd_download]: MD5 hash check passed
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Label and class file entries
+	Label: 953504d88877f0cd7852efb46b8956a7	GCF_009873565.1_ASM987356v1_genomic	D. dianthicola CFBP2982
+	Class: 953504d88877f0cd7852efb46b8956a7	GCF_009873565.1_ASM987356v1_genomic	Dickeya dianthicola
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving eSummary information for UID 5461201
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving URLs for GCF_009873555.1_ASM987355v1
+[INFO] [pyani.scripts.subcommands.subcmd_download]: MD5 hash check passed
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Label and class file entries
+	Label: f175fa01a1b43d3953de35cb84b5dcc5	GCF_009873555.1_ASM987355v1_genomic	D. solani M21a
+	Class: f175fa01a1b43d3953de35cb84b5dcc5	GCF_009873555.1_ASM987355v1_genomic	Dickeya solani
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving eSummary information for UID 5461191
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving URLs for GCF_009873535.1_ASM987353v1
+[INFO] [pyani.scripts.subcommands.subcmd_download]: MD5 hash check passed
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Label and class file entries
+	Label: 8e5c140761adab68da9359c36d738333	GCF_009873535.1_ASM987353v1_genomic	D. dianthicola CFBP2015
+	Class: 8e5c140761adab68da9359c36d738333	GCF_009873535.1_ASM987353v1_genomic	Dickeya dianthicola
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving eSummary information for UID 5461181
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving URLs for GCF_009873515.1_ASM987351v1
+[INFO] [pyani.scripts.subcommands.subcmd_download]: MD5 hash check passed
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Label and class file entries
+	Label: 697aeb59afbac35add268e0b1ff8b350	GCF_009873515.1_ASM987351v1_genomic	D. dianthicola CFBP1888
+	Class: 697aeb59afbac35add268e0b1ff8b350	GCF_009873515.1_ASM987351v1_genomic	Dickeya dianthicola
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving eSummary information for UID 5460851
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving URLs for GCF_009873225.1_ASM987322v1
+[INFO] [pyani.scripts.subcommands.subcmd_download]: MD5 hash check passed
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Label and class file entries
+	Label: 52b7f7949a7380d905e54d132469000c	GCF_009873225.1_ASM987322v1_genomic	D. fangzhongdai AP6
+	Class: 52b7f7949a7380d905e54d132469000c	GCF_009873225.1_ASM987322v1_genomic	Dickeya fangzhongdai
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving eSummary information for UID 5366311
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving URLs for GCF_007858975.2_ASM785897v2
+[INFO] [pyani.scripts.subcommands.subcmd_download]: MD5 hash check passed
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Label and class file entries
+	Label: 2d862e749faa45b92c941b54e551ca90	GCF_007858975.2_ASM785897v2_genomic	D. poaceiphila NCPPB 569
+	Class: 2d862e749faa45b92c941b54e551ca90	GCF_007858975.2_ASM785897v2_genomic	Dickeya poaceiphila
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving eSummary information for UID 5202211
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving URLs for GCF_009372235.1_ASM937223v1
+[INFO] [pyani.scripts.subcommands.subcmd_download]: MD5 hash check passed
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Label and class file entries
+	Label: 218f2783f463e39b8eb102c541dc79ae	GCF_009372235.1_ASM937223v1_genomic	D. sp. ZYY5 ZYY5
+	Class: 218f2783f463e39b8eb102c541dc79ae	GCF_009372235.1_ASM937223v1_genomic	Dickeya sp. ZYY5
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving eSummary information for UID 4269241
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving URLs for GCF_007858975.1_ASM785897v1
+[INFO] [pyani.scripts.subcommands.subcmd_download]: MD5 hash check passed
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Label and class file entries
+	Label: ba69ed79002f8742acab81938f2e72df	GCF_007858975.1_ASM785897v1_genomic	D. poaceiphila NCPPB 569
+	Class: ba69ed79002f8742acab81938f2e72df	GCF_007858975.1_ASM785897v1_genomic	Dickeya poaceiphila
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving eSummary information for UID 3939211
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving URLs for GCF_007210685.1_ASM721068v1
+[INFO] [pyani.scripts.subcommands.subcmd_download]: MD5 hash check passed
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Label and class file entries
+	Label: 4783e9f48cbceb83c037e882474ba1b0	GCF_007210685.1_ASM721068v1_genomic	D. sp. ws52 ws52
+	Class: 4783e9f48cbceb83c037e882474ba1b0	GCF_007210685.1_ASM721068v1_genomic	Dickeya sp. ws52
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving eSummary information for UID 2433681
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving URLs for GCF_900095885.1_Daq1742
+[INFO] [pyani.scripts.subcommands.subcmd_download]: MD5 hash check passed
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Label and class file entries
+	Label: d9ce98f150feec2bea4e253279858ead	GCF_900095885.1_Daq1742_genomic	D. aquatica 174/2
+	Class: d9ce98f150feec2bea4e253279858ead	GCF_900095885.1_Daq1742_genomic	Dickeya aquatica
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving eSummary information for UID 2196291
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving URLs for GCF_001187975.2_ASM118797v2
+[INFO] [pyani.scripts.subcommands.subcmd_download]: MD5 hash check passed
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Label and class file entries
+	Label: 1f94b27bfb1dc2a2232bbc0fffc829ce	GCF_001187975.2_ASM118797v2_genomic	D. fangzhongdai B16
+	Class: 1f94b27bfb1dc2a2232bbc0fffc829ce	GCF_001187975.2_ASM118797v2_genomic	Dickeya fangzhongdai
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving eSummary information for UID 2196281
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving URLs for GCF_001187965.2_ASM118796v2
+[INFO] [pyani.scripts.subcommands.subcmd_download]: MD5 hash check passed
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Label and class file entries
+	Label: 469fedb15ca2bd84ce82fcc3472c7164	GCF_001187965.2_ASM118796v2_genomic	D. fangzhongdai S1
+	Class: 469fedb15ca2bd84ce82fcc3472c7164	GCF_001187965.2_ASM118796v2_genomic	Dickeya fangzhongdai
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving eSummary information for UID 2162361
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving URLs for GCF_003934295.1_ASM393429v1
+[INFO] [pyani.scripts.subcommands.subcmd_download]: MD5 hash check passed
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Label and class file entries
+	Label: 770543ffd4ee7fcc1ab4371f00d320fe	GCF_003934295.1_ASM393429v1_genomic	D. lacustris S29
+	Class: 770543ffd4ee7fcc1ab4371f00d320fe	GCF_003934295.1_ASM393429v1_genomic	Dickeya lacustris
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving eSummary information for UID 2072631
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving URLs for GCF_003725575.1_ASM372557v1
+[INFO] [pyani.scripts.subcommands.subcmd_download]: MD5 hash check passed
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Label and class file entries
+	Label: 0d9c4a64075d533b3e3b8b106a16cbaf	GCF_003725575.1_ASM372557v1_genomic	D. undicola FVG10-MFV-A16
+	Class: 0d9c4a64075d533b3e3b8b106a16cbaf	GCF_003725575.1_ASM372557v1_genomic	Dickeya undicola
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving eSummary information for UID 2072621
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving URLs for GCF_003725615.1_ASM372561v1
+[INFO] [pyani.scripts.subcommands.subcmd_download]: MD5 hash check passed
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Label and class file entries
+	Label: 61504097ba88343f53452d28f60f8f8f	GCF_003725615.1_ASM372561v1_genomic	D. undicola FVG1-MFV-O17
+	Class: 61504097ba88343f53452d28f60f8f8f	GCF_003725615.1_ASM372561v1_genomic	Dickeya undicola
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving eSummary information for UID 2070001
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving URLs for GCF_003718335.1_ASM371833v1
+[INFO] [pyani.scripts.subcommands.subcmd_download]: MD5 hash check passed
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Label and class file entries
+	Label: b2f3a3ec004950d2ce04d0e1e69cc160	GCF_003718335.1_ASM371833v1_genomic	D. solani IFB0223
+	Class: b2f3a3ec004950d2ce04d0e1e69cc160	GCF_003718335.1_ASM371833v1_genomic	Dickeya solani
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving eSummary information for UID 2068281
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving URLs for GCF_000831935.2_ASM83193v2
+[INFO] [pyani.scripts.subcommands.subcmd_download]: MD5 hash check passed
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Label and class file entries
+	Label: 65200d41a256056986bff2b28d93de0c	GCF_000831935.2_ASM83193v2_genomic	D. solani IFB 0099
+	Class: 65200d41a256056986bff2b28d93de0c	GCF_000831935.2_ASM83193v2_genomic	Dickeya solani
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving eSummary information for UID 2008201
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving URLs for GCF_003628775.1_ASM362877v1
+[INFO] [pyani.scripts.subcommands.subcmd_download]: MD5 hash check passed
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Label and class file entries
+	Label: cd8d4143672b85f6ce59d6a60a2adc61	GCF_003628775.1_ASM362877v1_genomic	D. fangzhongdai PA1
+	Class: cd8d4143672b85f6ce59d6a60a2adc61	GCF_003628775.1_ASM362877v1_genomic	Dickeya fangzhongdai
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving eSummary information for UID 1996211
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving URLs for GCF_003600995.1_ASM360099v1
+[INFO] [pyani.scripts.subcommands.subcmd_download]: MD5 hash check passed
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Label and class file entries
+	Label: 45488edac7d3c178d251efec1953439d	GCF_003600995.1_ASM360099v1_genomic	D. solani IFB_0158
+	Class: 45488edac7d3c178d251efec1953439d	GCF_003600995.1_ASM360099v1_genomic	Dickeya solani
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving eSummary information for UID 1996201
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving URLs for GCF_003600975.1_ASM360097v1
+[INFO] [pyani.scripts.subcommands.subcmd_download]: MD5 hash check passed
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Label and class file entries
+	Label: 657de20e5463fe7c351ff0855d4895f1	GCF_003600975.1_ASM360097v1_genomic	D. solani IFB_0221
+	Class: 657de20e5463fe7c351ff0855d4895f1	GCF_003600975.1_ASM360097v1_genomic	Dickeya solani
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving eSummary information for UID 1992721
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving URLs for GCF_003595075.1_ASM359507v1
+[INFO] [pyani.scripts.subcommands.subcmd_download]: MD5 hash check passed
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Label and class file entries
+	Label: d8f285598ea173032533928765c71ecd	GCF_003595075.1_ASM359507v1_genomic	D. dianthicola S4.16.03.P2.4
+	Class: d8f285598ea173032533928765c71ecd	GCF_003595075.1_ASM359507v1_genomic	Dickeya dianthicola
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving eSummary information for UID 1992681
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving URLs for GCF_003595005.1_ASM359500v1
+[INFO] [pyani.scripts.subcommands.subcmd_download]: MD5 hash check passed
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Label and class file entries
+	Label: 090094972c23e5b1211b0074ca26598f	GCF_003595005.1_ASM359500v1_genomic	D. dianthicola S4.16.03.LID
+	Class: 090094972c23e5b1211b0074ca26598f	GCF_003595005.1_ASM359500v1_genomic	Dickeya dianthicola
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving eSummary information for UID 1875701
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving URLs for GCF_003403135.1_ASM340313v1
+[INFO] [pyani.scripts.subcommands.subcmd_download]: MD5 hash check passed
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Label and class file entries
+	Label: 670daa618a71f72b1ebdd123d7412ffe	GCF_003403135.1_ASM340313v1_genomic	D. dianthicola ME23
+	Class: 670daa618a71f72b1ebdd123d7412ffe	GCF_003403135.1_ASM340313v1_genomic	Dickeya dianthicola
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving eSummary information for UID 1698431
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving URLs for GCF_003121805.1_ASM312180v1
+[INFO] [pyani.scripts.subcommands.subcmd_download]: MD5 hash check passed
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Label and class file entries
+	Label: b1e43cb0bb69cecab146c652b277a032	GCF_003121805.1_ASM312180v1_genomic	D. dianthicola SS70
+	Class: b1e43cb0bb69cecab146c652b277a032	GCF_003121805.1_ASM312180v1_genomic	Dickeya dianthicola
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving eSummary information for UID 1677541
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving URLs for GCF_003049805.1_ASM304980v1
+[INFO] [pyani.scripts.subcommands.subcmd_download]: MD5 hash check passed
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Label and class file entries
+	Label: 48e6499a3806ba0abad81e3721e5faf9	GCF_003049805.1_ASM304980v1_genomic	D. sp. Secpp 1600 Secpp 1600
+	Class: 48e6499a3806ba0abad81e3721e5faf9	GCF_003049805.1_ASM304980v1_genomic	Dickeya sp. Secpp 1600
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving eSummary information for UID 1677531
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving URLs for GCF_003049785.1_ASM304978v1
+[INFO] [pyani.scripts.subcommands.subcmd_download]: MD5 hash check passed
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Label and class file entries
+	Label: 2f080d351fab989f0ef93a8e56c8551e	GCF_003049785.1_ASM304978v1_genomic	D. dadantii DSM 18020
+	Class: 2f080d351fab989f0ef93a8e56c8551e	GCF_003049785.1_ASM304978v1_genomic	Dickeya dadantii
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving eSummary information for UID 1557551
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving URLs for GCF_002924265.1_ASM292426v1
+[INFO] [pyani.scripts.subcommands.subcmd_download]: MD5 hash check passed
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Label and class file entries
+	Label: 37249d7b69b7b70257a4dfa66921c17c	GCF_002924265.1_ASM292426v1_genomic	D. solani F012
+	Class: 37249d7b69b7b70257a4dfa66921c17c	GCF_002924265.1_ASM292426v1_genomic	Dickeya solani
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving eSummary information for UID 1556591
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving URLs for GCF_002921195.1_ASM292119v1
+[INFO] [pyani.scripts.subcommands.subcmd_download]: MD5 hash check passed
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Label and class file entries
+	Label: 2c6af2ed1512c78ba4e2f5da51c3c9e8	GCF_002921195.1_ASM292119v1_genomic	D. solani F012
+	Class: 2c6af2ed1512c78ba4e2f5da51c3c9e8	GCF_002921195.1_ASM292119v1_genomic	Dickeya solani
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving eSummary information for UID 1547821
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving URLs for GCF_002906735.1_ASM290673v1
+[INFO] [pyani.scripts.subcommands.subcmd_download]: MD5 hash check passed
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Label and class file entries
+	Label: 795ac0617be85feee2bd25ae7a57c205	GCF_002906735.1_ASM290673v1_genomic	D. dianthicola WV516
+	Class: 795ac0617be85feee2bd25ae7a57c205	GCF_002906735.1_ASM290673v1_genomic	Dickeya dianthicola
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving eSummary information for UID 1547811
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving URLs for GCF_002906725.1_ASM290672v1
+[INFO] [pyani.scripts.subcommands.subcmd_download]: MD5 hash check passed
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Label and class file entries
+	Label: 51ed1b91a44a56de70a765468b5ceb65	GCF_002906725.1_ASM290672v1_genomic	D. dianthicola DE440
+	Class: 51ed1b91a44a56de70a765468b5ceb65	GCF_002906725.1_ASM290672v1_genomic	Dickeya dianthicola
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving eSummary information for UID 1526671
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving URLs for GCF_002887555.1_ASM288755v1
+[INFO] [pyani.scripts.subcommands.subcmd_download]: MD5 hash check passed
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Label and class file entries
+	Label: f750336d964854531525cd6b4cd64e9e	GCF_002887555.1_ASM288755v1_genomic	D. zeae MS2
+	Class: f750336d964854531525cd6b4cd64e9e	GCF_002887555.1_ASM288755v1_genomic	Dickeya zeae
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving eSummary information for UID 1493921
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving URLs for GCF_002846995.1_ASM284699v1
+[INFO] [pyani.scripts.subcommands.subcmd_download]: MD5 hash check passed
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Label and class file entries
+	Label: ad4d2b8b536d8f751375d0bd9e5f1684	GCF_002846995.1_ASM284699v1_genomic	D. solani PPO 9019
+	Class: ad4d2b8b536d8f751375d0bd9e5f1684	GCF_002846995.1_ASM284699v1_genomic	Dickeya solani
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving eSummary information for UID 1493911
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving URLs for GCF_002846975.1_ASM284697v1
+[INFO] [pyani.scripts.subcommands.subcmd_download]: MD5 hash check passed
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Label and class file entries
+	Label: a96b1d707ea295ffaed85c9e01840ebc	GCF_002846975.1_ASM284697v1_genomic	D. solani D s0432-1
+	Class: a96b1d707ea295ffaed85c9e01840ebc	GCF_002846975.1_ASM284697v1_genomic	Dickeya solani
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving eSummary information for UID 1460881
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving URLs for GCF_000511285.2_ASM51128v2
+[INFO] [pyani.scripts.subcommands.subcmd_download]: MD5 hash check passed
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Label and class file entries
+	Label: 96ef2d4c2d47e874a9915fdc6a632411	GCF_000511285.2_ASM51128v2_genomic	D. solani RNS 08.23.3.1.A
+	Class: 96ef2d4c2d47e874a9915fdc6a632411	GCF_000511285.2_ASM51128v2_genomic	Dickeya solani
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving eSummary information for UID 1460111
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving URLs for GCF_002812485.1_ASM281248v1
+[INFO] [pyani.scripts.subcommands.subcmd_download]: MD5 hash check passed
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Label and class file entries
+	Label: 2837215930850f001ac4eef123431156	GCF_002812485.1_ASM281248v1_genomic	D. fangzhongdai DSM 101947
+	Class: 2837215930850f001ac4eef123431156	GCF_002812485.1_ASM281248v1_genomic	Dickeya fangzhongdai
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving eSummary information for UID 1406231
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving URLs for GCF_002706485.1_ASM270648v1
+[INFO] [pyani.scripts.subcommands.subcmd_download]: MD5 hash check passed
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Label and class file entries
+	Label: e3f302abb110c64f2cd05b88fe2b3abc	GCF_002706485.1_ASM270648v1_genomic	D. dianthicola RNS04.9
+	Class: e3f302abb110c64f2cd05b88fe2b3abc	GCF_002706485.1_ASM270648v1_genomic	Dickeya dianthicola
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving eSummary information for UID 1002791
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving URLs for GCF_001995275.1_ASM199527v1
+[INFO] [pyani.scripts.subcommands.subcmd_download]: MD5 hash check passed
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Label and class file entries
+	Label: 4a97b27bbf13d807cad702a265502b1c	GCF_001995275.1_ASM199527v1_genomic	D. dadantii CZ1501
+	Class: 4a97b27bbf13d807cad702a265502b1c	GCF_001995275.1_ASM199527v1_genomic	Dickeya dadantii
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving eSummary information for UID 750721
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving URLs for GCF_000406085.2_ASM40608v2
+[INFO] [pyani.scripts.subcommands.subcmd_download]: MD5 hash check passed
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Label and class file entries
+	Label: 3db3b2ff83c788755bccdc0ad6b1a718	GCF_000406085.2_ASM40608v2_genomic	D. sp. CSL RW240 CSL RW240
+	Class: 3db3b2ff83c788755bccdc0ad6b1a718	GCF_000406085.2_ASM40608v2_genomic	Dickeya sp. CSL RW240
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving eSummary information for UID 740741
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving URLs for GCF_001644705.1_ASM164470v1
+[INFO] [pyani.scripts.subcommands.subcmd_download]: MD5 hash check passed
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Label and class file entries
+	Label: d764a1cafb99b99fd6fbd62a4d8f09b4	GCF_001644705.1_ASM164470v1_genomic	D. solani IPO 2222
+	Class: d764a1cafb99b99fd6fbd62a4d8f09b4	GCF_001644705.1_ASM164470v1_genomic	Dickeya solani
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving eSummary information for UID 711668
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving URLs for GCF_000406325.1_DZEMK19_1.0
+[INFO] [pyani.scripts.subcommands.subcmd_download]: MD5 hash check passed
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Label and class file entries
+	Label: f9fa288c2dbe0dd0325f62b4e894a918	GCF_000406325.1_DZEMK19_1.0_genomic	D. zeae MK19
+	Class: f9fa288c2dbe0dd0325f62b4e894a918	GCF_000406325.1_DZEMK19_1.0_genomic	Dickeya zeae
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving eSummary information for UID 711648
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving URLs for GCF_000406305.1_DXXMK7_1.0
+[INFO] [pyani.scripts.subcommands.subcmd_download]: MD5 hash check passed
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Label and class file entries
+	Label: 3057f244777c4d94d4f61b8ab139c369	GCF_000406305.1_DXXMK7_1.0_genomic	D. sp. MK7 MK7
+	Class: 3057f244777c4d94d4f61b8ab139c369	GCF_000406305.1_DXXMK7_1.0_genomic	Dickeya sp. MK7
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving eSummary information for UID 711628
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving URLs for GCF_000406285.1_DXXDW0440_1.0
+[INFO] [pyani.scripts.subcommands.subcmd_download]: MD5 hash check passed
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Label and class file entries
+	Label: 851962a4210ef588296a6d564f6d0f4a	GCF_000406285.1_DXXDW0440_1.0_genomic	D. sp. DW 0440 DW 0440
+	Class: 851962a4210ef588296a6d564f6d0f4a	GCF_000406285.1_DXXDW0440_1.0_genomic	Dickeya sp. DW 0440
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving eSummary information for UID 711608
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving URLs for GCF_000406265.1_DDA3537_1.0
+[INFO] [pyani.scripts.subcommands.subcmd_download]: MD5 hash check passed
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Label and class file entries
+	Label: aff707206f23b831b60db2756e1857da	GCF_000406265.1_DDA3537_1.0_genomic	D. dadantii NCPPB 3537
+	Class: aff707206f23b831b60db2756e1857da	GCF_000406265.1_DDA3537_1.0_genomic	Dickeya dadantii
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving eSummary information for UID 711588
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving URLs for GCF_000406245.1_DCH3533_1.0
+[INFO] [pyani.scripts.subcommands.subcmd_download]: MD5 hash check passed
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Label and class file entries
+	Label: 20a9e94b17ec7a4b6cbce561660f037c	GCF_000406245.1_DCH3533_1.0_genomic	D. chrysanthemi NCPPB 3533
+	Class: 20a9e94b17ec7a4b6cbce561660f037c	GCF_000406245.1_DCH3533_1.0_genomic	Dickeya chrysanthemi
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving eSummary information for UID 711568
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving URLs for GCF_000406225.1_DZE3531_1.0
+[INFO] [pyani.scripts.subcommands.subcmd_download]: MD5 hash check passed
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Label and class file entries
+	Label: 1aef61d397f1cd9eda2e0cb6e589892b	GCF_000406225.1_DZE3531_1.0_genomic	D. zeae NCPPB 3531
+	Class: 1aef61d397f1cd9eda2e0cb6e589892b	GCF_000406225.1_DZE3531_1.0_genomic	Dickeya zeae
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving eSummary information for UID 711548
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving URLs for GCF_000406205.1_DXX3274_1.0
+[INFO] [pyani.scripts.subcommands.subcmd_download]: MD5 hash check passed
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Label and class file entries
+	Label: d9a2d78162b45b3676594726c9b87733	GCF_000406205.1_DXX3274_1.0_genomic	D. sp. NCPPB 3274 NCPPB 3274
+	Class: d9a2d78162b45b3676594726c9b87733	GCF_000406205.1_DXX3274_1.0_genomic	Dickeya sp. NCPPB 3274
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving eSummary information for UID 711528
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving URLs for GCF_000406185.1_DDA2976_1.0
+[INFO] [pyani.scripts.subcommands.subcmd_download]: MD5 hash check passed
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Label and class file entries
+	Label: f7f61ef06541c3fb2c21e9e5c34d7e2f	GCF_000406185.1_DDA2976_1.0_genomic	D. dadantii NCPPB 2976
+	Class: f7f61ef06541c3fb2c21e9e5c34d7e2f	GCF_000406185.1_DDA2976_1.0_genomic	Dickeya dadantii
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving eSummary information for UID 711508
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving URLs for GCF_000406165.1_DZE2538_1.0
+[INFO] [pyani.scripts.subcommands.subcmd_download]: MD5 hash check passed
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Label and class file entries
+	Label: 3808b1c9f72628ea98e50c6b8e7b3b20	GCF_000406165.1_DZE2538_1.0_genomic	D. zeae NCPPB 2538
+	Class: 3808b1c9f72628ea98e50c6b8e7b3b20	GCF_000406165.1_DZE2538_1.0_genomic	Dickeya zeae
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving eSummary information for UID 711488
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving URLs for GCF_000406145.1_DDA898_1.0
+[INFO] [pyani.scripts.subcommands.subcmd_download]: MD5 hash check passed
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Label and class file entries
+	Label: 4c6e38b1e931df2b15976bd356fe2fcc	GCF_000406145.1_DDA898_1.0_genomic	D. dadantii NCPPB 898
+	Class: 4c6e38b1e931df2b15976bd356fe2fcc	GCF_000406145.1_DDA898_1.0_genomic	Dickeya dadantii
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving eSummary information for UID 711468
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving URLs for GCF_000406125.1_DXY569_1.0
+[INFO] [pyani.scripts.subcommands.subcmd_download]: MD5 hash check passed
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Label and class file entries
+	Label: 8b19717c9d931affb15cfb1eab005fbf	GCF_000406125.1_DXY569_1.0_genomic	D. poaceiphila NCPPB 569
+	Class: 8b19717c9d931affb15cfb1eab005fbf	GCF_000406125.1_DXY569_1.0_genomic	Dickeya poaceiphila
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving eSummary information for UID 711448
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving URLs for GCF_000406105.1_DCH402_1.0
+[INFO] [pyani.scripts.subcommands.subcmd_download]: MD5 hash check passed
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Label and class file entries
+	Label: 59878c7b89b4d17f143e0aa51bd78c5a	GCF_000406105.1_DCH402_1.0_genomic	D. chrysanthemi NCPPB 402
+	Class: 59878c7b89b4d17f143e0aa51bd78c5a	GCF_000406105.1_DCH402_1.0_genomic	Dickeya chrysanthemi
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving eSummary information for UID 711428
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving URLs for GCF_000406085.1_DXXRW240_1.0
+[INFO] [pyani.scripts.subcommands.subcmd_download]: MD5 hash check passed
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Label and class file entries
+	Label: a4ad6556848e77e3a4aeee52fbe28b57	GCF_000406085.1_DXXRW240_1.0_genomic	D. sp. CSL RW240 CSL RW240
+	Class: a4ad6556848e77e3a4aeee52fbe28b57	GCF_000406085.1_DXXRW240_1.0_genomic	Dickeya sp. CSL RW240
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving eSummary information for UID 711408
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving URLs for GCF_000406045.1_DZERW192_1.0
+[INFO] [pyani.scripts.subcommands.subcmd_download]: MD5 hash check passed
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Label and class file entries
+	Label: a09e59b5e8876ca4ff9cfe49f279f8fb	GCF_000406045.1_DZERW192_1.0_genomic	D. zeae CSL RW192
+	Class: a09e59b5e8876ca4ff9cfe49f279f8fb	GCF_000406045.1_DZERW192_1.0_genomic	Dickeya zeae
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving eSummary information for UID 701808
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving URLs for GCF_000404105.1_DiZe_1.0
+[INFO] [pyani.scripts.subcommands.subcmd_download]: MD5 hash check passed
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Label and class file entries
+	Label: de0a985a9506a38d0fec418234453d92	GCF_000404105.1_DiZe_1.0_genomic	D. zeae DZ2Q
+	Class: de0a985a9506a38d0fec418234453d92	GCF_000404105.1_DiZe_1.0_genomic	Dickeya zeae
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving eSummary information for UID 700848
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving URLs for GCF_000406065.1_DCH516_1.0
+[INFO] [pyani.scripts.subcommands.subcmd_download]: MD5 hash check passed
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Label and class file entries
+	Label: 4fc94b156b63a670e22ba22bf4270914	GCF_000406065.1_DCH516_1.0_genomic	D. chrysanthemi NCPPB 516
+	Class: 4fc94b156b63a670e22ba22bf4270914	GCF_000406065.1_DCH516_1.0_genomic	Dickeya chrysanthemi
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving eSummary information for UID 689678
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving URLs for GCF_000400565.1_DSOGBBC2040_1.0
+[INFO] [pyani.scripts.subcommands.subcmd_download]: MD5 hash check passed
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Label and class file entries
+	Label: b170fa2b47d7f5d7a630e5e67dba3292	GCF_000400565.1_DSOGBBC2040_1.0_genomic	D. solani GBBC 2040
+	Class: b170fa2b47d7f5d7a630e5e67dba3292	GCF_000400565.1_DSOGBBC2040_1.0_genomic	Dickeya solani
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving eSummary information for UID 689668
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving URLs for GCF_000400525.1_DZE3532_1.0
+[INFO] [pyani.scripts.subcommands.subcmd_download]: MD5 hash check passed
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Label and class file entries
+	Label: 224c916b4cf361237e31fff614a7ae2d	GCF_000400525.1_DZE3532_1.0_genomic	D. zeae NCPPB 3532
+	Class: 224c916b4cf361237e31fff614a7ae2d	GCF_000400525.1_DZE3532_1.0_genomic	Dickeya zeae
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving eSummary information for UID 689658
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving URLs for GCF_000400505.1_DPA2511_1.0
+[INFO] [pyani.scripts.subcommands.subcmd_download]: MD5 hash check passed
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Label and class file entries
+	Label: 83e7ca1b28b79c9e3d9829aed1ecbd56	GCF_000400505.1_DPA2511_1.0_genomic	D. paradisiaca NCPPB 2511
+	Class: 83e7ca1b28b79c9e3d9829aed1ecbd56	GCF_000400505.1_DPA2511_1.0_genomic	Dickeya paradisiaca
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving eSummary information for UID 689638
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving URLs for GCF_000400795.1_DSOIPO2222_1.0
+[INFO] [pyani.scripts.subcommands.subcmd_download]: MD5 hash check passed
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Label and class file entries
+	Label: d72d11f5f988c2ad409e17984eb48aee	GCF_000400795.1_DSOIPO2222_1.0_genomic	D. solani IPO 2222
+	Class: d72d11f5f988c2ad409e17984eb48aee	GCF_000400795.1_DSOIPO2222_1.0_genomic	Dickeya solani
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving eSummary information for UID 688348
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving URLs for GCF_000365365.1_DDIGBBC2039_1.0
+[INFO] [pyani.scripts.subcommands.subcmd_download]: MD5 hash check passed
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Label and class file entries
+	Label: 6dedd80432385feaf1738d39922ad335	GCF_000365365.1_DDIGBBC2039_1.0_genomic	D. dianthicola GBBC 2039
+	Class: 6dedd80432385feaf1738d39922ad335	GCF_000365365.1_DDIGBBC2039_1.0_genomic	Dickeya dianthicola
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving eSummary information for UID 686928
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving URLs for GCF_000365405.1_DDI3534_1.0
+[INFO] [pyani.scripts.subcommands.subcmd_download]: MD5 hash check passed
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Label and class file entries
+	Label: da118e1393adc9c9f61ba0a563d433b5	GCF_000365405.1_DDI3534_1.0_genomic	D. dianthicola NCPPB 3534
+	Class: da118e1393adc9c9f61ba0a563d433b5	GCF_000365405.1_DDI3534_1.0_genomic	Dickeya dianthicola
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving eSummary information for UID 686918
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving URLs for GCF_000365345.1_DSOMK16_1.0
+[INFO] [pyani.scripts.subcommands.subcmd_download]: MD5 hash check passed
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Label and class file entries
+	Label: 1cd6f087e0288628337061479c441369	GCF_000365345.1_DSOMK16_1.0_genomic	D. solani MK16
+	Class: 1cd6f087e0288628337061479c441369	GCF_000365345.1_DSOMK16_1.0_genomic	Dickeya solani
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving eSummary information for UID 686908
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving URLs for GCF_000365305.1_DDI453_v1.0
+[INFO] [pyani.scripts.subcommands.subcmd_download]: MD5 hash check passed
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Label and class file entries
+	Label: 5632128394d0881b8055a5fbfd39dae3	GCF_000365305.1_DDI453_v1.0_genomic	D. dianthicola NCPPB 453
+	Class: 5632128394d0881b8055a5fbfd39dae3	GCF_000365305.1_DDI453_v1.0_genomic	Dickeya dianthicola
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving eSummary information for UID 686898
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving URLs for GCF_000365285.1_DSOMK10_1.0
+[INFO] [pyani.scripts.subcommands.subcmd_download]: MD5 hash check passed
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Label and class file entries
+	Label: 5208232cfd4364db575700f6f9e24500	GCF_000365285.1_DSOMK10_1.0_genomic	D. solani MK10
+	Class: 5208232cfd4364db575700f6f9e24500	GCF_000365285.1_DSOMK10_1.0_genomic	Dickeya solani
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving eSummary information for UID 663288
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving URLs for GCF_000382585.1_DiZ_MS1
+[INFO] [pyani.scripts.subcommands.subcmd_download]: MD5 hash check passed
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Label and class file entries
+	Label: 6e1ed24dcb703596200131e2a3c3470d	GCF_000382585.1_DiZ_MS1_genomic	D. zeae MS1
+	Class: 6e1ed24dcb703596200131e2a3c3470d	GCF_000382585.1_DiZ_MS1_genomic	Dickeya zeae
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving eSummary information for UID 617318
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving URLs for GCF_000264075.1_ASM26407v1
+[INFO] [pyani.scripts.subcommands.subcmd_download]: MD5 hash check passed
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Label and class file entries
+	Label: eb90b1fa48acf3ed828595c86d800151	GCF_000264075.1_ASM26407v1_genomic	D. zeae ZJU1202
+	Class: eb90b1fa48acf3ed828595c86d800151	GCF_000264075.1_ASM26407v1_genomic	Dickeya zeae
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving eSummary information for UID 614561
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving URLs for GCF_001506125.1_ASM150612v1
+[INFO] [pyani.scripts.subcommands.subcmd_download]: MD5 hash check passed
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Label and class file entries
+	Label: a851ea70e3d4449091bf6ebcce571dbc	GCF_001506125.1_ASM150612v1_genomic	D. solani PPO 9019
+	Class: a851ea70e3d4449091bf6ebcce571dbc	GCF_001506125.1_ASM150612v1_genomic	Dickeya solani
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving eSummary information for UID 564831
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving URLs for GCF_000365405.2_DDI3534_1.0
+[INFO] [pyani.scripts.subcommands.subcmd_download]: MD5 hash check passed
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Label and class file entries
+	Label: c5e70c38c49cac47a70fe22a3855863d	GCF_000365405.2_DDI3534_1.0_genomic	D. dianthicola NCPPB 3534
+	Class: c5e70c38c49cac47a70fe22a3855863d	GCF_000365405.2_DDI3534_1.0_genomic	Dickeya dianthicola
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving eSummary information for UID 562231
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving URLs for GCF_001417915.1_Dsl_1.0
+[INFO] [pyani.scripts.subcommands.subcmd_download]: MD5 hash check passed
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Label and class file entries
+	Label: 2ab5815990eee51f95013361130a5102	GCF_001417915.1_Dsl_1.0_genomic	D. solani PPO 9134
+	Class: 2ab5815990eee51f95013361130a5102	GCF_001417915.1_Dsl_1.0_genomic	Dickeya solani
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving eSummary information for UID 553991
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving URLs for GCF_001401705.1_Dsl_1.0
+[INFO] [pyani.scripts.subcommands.subcmd_download]: MD5 hash check passed
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Label and class file entries
+	Label: ff6fd037304bda0e61b3d4652caf0865	GCF_001401705.1_Dsl_1.0_genomic	D. solani RNS 05.1.2A
+	Class: ff6fd037304bda0e61b3d4652caf0865	GCF_001401705.1_Dsl_1.0_genomic	Dickeya solani
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving eSummary information for UID 553981
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving URLs for GCF_001401695.1_Dsl_1.0
+[INFO] [pyani.scripts.subcommands.subcmd_download]: MD5 hash check passed
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Label and class file entries
+	Label: 1ea92e0c9ac061bb1935813c32dbb6da	GCF_001401695.1_Dsl_1.0_genomic	D. solani RNS 07.7.3B
+	Class: 1ea92e0c9ac061bb1935813c32dbb6da	GCF_001401695.1_Dsl_1.0_genomic	Dickeya solani
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving eSummary information for UID 431381
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving URLs for GCF_001187975.1_ASM118797v1
+[INFO] [pyani.scripts.subcommands.subcmd_download]: MD5 hash check passed
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Label and class file entries
+	Label: 24fc0a53b4f4b38e840a3201c7f9d2d9	GCF_001187975.1_ASM118797v1_genomic	D. fangzhongdai B16
+	Class: 24fc0a53b4f4b38e840a3201c7f9d2d9	GCF_001187975.1_ASM118797v1_genomic	Dickeya fangzhongdai
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving eSummary information for UID 431371
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving URLs for GCF_001187965.1_ASM118796v1
+[INFO] [pyani.scripts.subcommands.subcmd_download]: MD5 hash check passed
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Label and class file entries
+	Label: aa6db885a2ed4d6f5cc0553eb025ade7	GCF_001187965.1_ASM118796v1_genomic	D. fangzhongdai S1
+	Class: aa6db885a2ed4d6f5cc0553eb025ade7	GCF_001187965.1_ASM118796v1_genomic	Dickeya fangzhongdai
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving eSummary information for UID 339341
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving URLs for GCF_000975305.1_DdRNS04.9V1.0
+[INFO] [pyani.scripts.subcommands.subcmd_download]: MD5 hash check passed
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Label and class file entries
+	Label: 65e75c0cb367f9069b55a0f6e325291c	GCF_000975305.1_DdRNS04.9V1.0_genomic	D. dianthicola RNS04.9
+	Class: 65e75c0cb367f9069b55a0f6e325291c	GCF_000975305.1_DdRNS04.9V1.0_genomic	Dickeya dianthicola
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving eSummary information for UID 265548
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving URLs for GCF_000147055.1_ASM14705v1
+[INFO] [pyani.scripts.subcommands.subcmd_download]: MD5 hash check passed
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Label and class file entries
+	Label: 3fd0ea2643dd1caadf9781cb7506cb89	GCF_000147055.1_ASM14705v1_genomic	D. dadantii 3937
+	Class: 3fd0ea2643dd1caadf9781cb7506cb89	GCF_000147055.1_ASM14705v1_genomic	Dickeya dadantii
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving eSummary information for UID 249781
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving URLs for GCF_000831935.1_ASM83193v1
+[INFO] [pyani.scripts.subcommands.subcmd_download]: MD5 hash check passed
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Label and class file entries
+	Label: b754cf5c212e28827be4b57923796d92	GCF_000831935.1_ASM83193v1_genomic	D. solani IFB 0099
+	Class: b754cf5c212e28827be4b57923796d92	GCF_000831935.1_ASM83193v1_genomic	Dickeya solani
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving eSummary information for UID 241691
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving URLs for GCF_000816045.1_ASM81604v1
+[INFO] [pyani.scripts.subcommands.subcmd_download]: MD5 hash check passed
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Label and class file entries
+	Label: f49670bab91f99910d0c8ae198b6ccbd	GCF_000816045.1_ASM81604v1_genomic	D. zeae EC1
+	Class: f49670bab91f99910d0c8ae198b6ccbd	GCF_000816045.1_ASM81604v1_genomic	Dickeya zeae
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving eSummary information for UID 235221
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving URLs for GCF_000803195.1_ASM80319v1
+[INFO] [pyani.scripts.subcommands.subcmd_download]: MD5 hash check passed
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Label and class file entries
+	Label: aac764b34618add8a991997b78ed5a4d	GCF_000803195.1_ASM80319v1_genomic	D. fangzhongdai M005
+	Class: aac764b34618add8a991997b78ed5a4d	GCF_000803195.1_ASM80319v1_genomic	Dickeya fangzhongdai
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving eSummary information for UID 225991
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving URLs for GCF_000784725.1_ASM78472v1
+[INFO] [pyani.scripts.subcommands.subcmd_download]: MD5 hash check passed
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Label and class file entries
+	Label: 1677af5d11e85d01339e9d44ffa07a19	GCF_000784725.1_ASM78472v1_genomic	D. chrysanthemi L11
+	Class: 1677af5d11e85d01339e9d44ffa07a19	GCF_000784725.1_ASM78472v1_genomic	Dickeya chrysanthemi
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving eSummary information for UID 225981
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving URLs for GCF_000784735.1_ASM78473v1
+[INFO] [pyani.scripts.subcommands.subcmd_download]: MD5 hash check passed
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Label and class file entries
+	Label: 686eb97568733a8f25f787384ec38384	GCF_000784735.1_ASM78473v1_genomic	D. undicola 2B12
+	Class: 686eb97568733a8f25f787384ec38384	GCF_000784735.1_ASM78473v1_genomic	Dickeya undicola
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving eSummary information for UID 220651
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving URLs for GCF_000774065.1_ASM77406v1
+[INFO] [pyani.scripts.subcommands.subcmd_download]: MD5 hash check passed
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Label and class file entries
+	Label: bab84a27c447bd362870ddb6ec08867b	GCF_000774065.1_ASM77406v1_genomic	D. fangzhongdai M074
+	Class: bab84a27c447bd362870ddb6ec08867b	GCF_000774065.1_ASM77406v1_genomic	Dickeya fangzhongdai
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving eSummary information for UID 212871
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving URLs for GCF_000758345.1_ASM75834v1
+[INFO] [pyani.scripts.subcommands.subcmd_download]: MD5 hash check passed
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Label and class file entries
+	Label: 9dbf8188bd68d9e00549a02621fe6f1b	GCF_000758345.1_ASM75834v1_genomic	D. fangzhongdai ND14b
+	Class: 9dbf8188bd68d9e00549a02621fe6f1b	GCF_000758345.1_ASM75834v1_genomic	Dickeya fangzhongdai
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving eSummary information for UID 164091
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving URLs for GCF_000511285.1_SSPACE
+[INFO] [pyani.scripts.subcommands.subcmd_download]: MD5 hash check passed
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Label and class file entries
+	Label: 894dadfdb5ce427c30601aa62946e24d	GCF_000511285.1_SSPACE_genomic	D. solani RNS 08.23.3.1.A
+	Class: 894dadfdb5ce427c30601aa62946e24d	GCF_000511285.1_SSPACE_genomic	Dickeya solani
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving eSummary information for UID 106188
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving URLs for GCF_000025065.1_ASM2506v1
+[INFO] [pyani.scripts.subcommands.subcmd_download]: MD5 hash check passed
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Label and class file entries
+	Label: c08c89be54cd7fed723881c1f8ae1521	GCF_000025065.1_ASM2506v1_genomic	D. zeae Ech586
+	Class: c08c89be54cd7fed723881c1f8ae1521	GCF_000025065.1_ASM2506v1_genomic	Dickeya zeae
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving eSummary information for UID 67531
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving URLs for GCF_000474655.1_Dickeya1.0
+[INFO] [pyani.scripts.subcommands.subcmd_download]: MD5 hash check passed
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Label and class file entries
+	Label: 19f99a4bbe2b9f81d43c8ec47d2324a1	GCF_000474655.1_Dickeya1.0_genomic	D. solani D s0432-1
+	Class: 19f99a4bbe2b9f81d43c8ec47d2324a1	GCF_000474655.1_Dickeya1.0_genomic	Dickeya solani
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving eSummary information for UID 44228
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving URLs for GCF_000023565.1_ASM2356v1
+[INFO] [pyani.scripts.subcommands.subcmd_download]: MD5 hash check passed
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Label and class file entries
+	Label: e088846fee661047e2aad374d39aea15	GCF_000023565.1_ASM2356v1_genomic	D. chrysanthemi Ech1591
+	Class: e088846fee661047e2aad374d39aea15	GCF_000023565.1_ASM2356v1_genomic	Dickeya chrysanthemi
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving eSummary information for UID 44208
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving URLs for GCF_000023545.1_ASM2354v1
+[INFO] [pyani.scripts.subcommands.subcmd_download]: MD5 hash check passed
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Label and class file entries
+	Label: 80cff9a7e666375951c6e1c2f4ba9b6a	GCF_000023545.1_ASM2354v1_genomic	D. paradisiaca Ech703
+	Class: 80cff9a7e666375951c6e1c2f4ba9b6a	GCF_000023545.1_ASM2354v1_genomic	Dickeya paradisiaca
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving eSummary information for UID 41251
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving URLs for GCF_000430955.1_DDIIPO980_1.0
+[INFO] [pyani.scripts.subcommands.subcmd_download]: MD5 hash check passed
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Label and class file entries
+	Label: 4cb2984601c9832d6e32b24653c59717	GCF_000430955.1_DDIIPO980_1.0_genomic	D. dianthicola IPO 980
+	Class: 4cb2984601c9832d6e32b24653c59717	GCF_000430955.1_DDIIPO980_1.0_genomic	Dickeya dianthicola
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Writing classes file to dickeya_genomes/classes.txt
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Writing labels file to dickeya_genomes/labels.txt
+[INFO] [pyani.scripts.pyani_script]: Completed. Time taken: 380.339

@@ -1,0 +1,136 @@
+[INFO] [pyani.scripts.pyani_script]: Processed arguments: Namespace(api_keypath=PosixPath('~/.ncbi/api_key'), batchsize=10000, citation=False, classfname='classes.txt', debug=False, disable_tqdm=False, dryrun=False, email='leighton.pritchard@strath.ac.uk', force=False, func=<function subcmd_download at 0x2b47c47b79d8>, kraken=False, labelfname='labels.txt', logfile=PosixPath('01_download.log'), noclobber=False, outdir=PosixPath('brenneria_genomes'), retries=20, taxon='71655', timeout=10, verbose=True)
+[INFO] [pyani.scripts.pyani_script]: command-line: /mnt/shared/scratch/synology/lp40866/apps/conda/envs/pyani/bin/pyani download -v -l 01_download.log --email leighton.pritchard@strath.ac.uk -t 71655 brenneria_genomes
+[INFO] [pyani.scripts.pyani_script]: CITATION INFO
+[INFO] [pyani.scripts.pyani_script]: If you use pyani in your work, please cite the following publication:
+[INFO] [pyani.scripts.pyani_script]: 	Pritchard, L., Glover, R. H., Humphris, S., Elphinstone, J. G.,
+[INFO] [pyani.scripts.pyani_script]: 	& Toth, I.K. (2016) 'Genomics and taxonomy in diagnostics for
+[INFO] [pyani.scripts.pyani_script]: 	food security: soft-rotting enterobacterial plant pathogens.'
+[INFO] [pyani.scripts.pyani_script]: 	Analytical Methods, 8(1), 12–24. http://doi.org/10.1039/C5AY02550H
+[INFO] [pyani.scripts.pyani_script]: DEPENDENCIES
+[INFO] [pyani.scripts.pyani_script]: The authors of pyani gratefully acknowledge its dependence on
+[INFO] [pyani.scripts.pyani_script]: the following bioinformatics software:
+[INFO] [pyani.scripts.pyani_script]: 	MUMmer3: S. Kurtz, A. Phillippy, A.L. Delcher, M. Smoot, M. Shumway,
+[INFO] [pyani.scripts.pyani_script]: 	C. Antonescu, and S.L. Salzberg (2004), 'Versatile and open software
+[INFO] [pyani.scripts.pyani_script]: 	for comparing large genomes' Genome Biology 5:R12
+[INFO] [pyani.scripts.pyani_script]: 	BLAST+: Camacho C., Coulouris G., Avagyan V., Ma N., Papadopoulos J.,
+[INFO] [pyani.scripts.pyani_script]: 	Bealer K., & Madden T.L. (2008) 'BLAST+: architecture and applications.'
+[INFO] [pyani.scripts.pyani_script]: 	BMC Bioinformatics 10:421.
+[INFO] [pyani.scripts.pyani_script]: 	BLAST: Altschul, S.F., Madden, T.L., Schäffer, A.A., Zhang, J.,
+[INFO] [pyani.scripts.pyani_script]: 	Zhang, Z., Miller, W. & Lipman, D.J. (1997) 'Gapped BLAST and PSI-BLAST:
+[INFO] [pyani.scripts.pyani_script]: 	a new generation of protein database search programs.' Nucleic Acids Res.
+[INFO] [pyani.scripts.pyani_script]: 	25:3389-3402
+[INFO] [pyani.scripts.pyani_script]: 	Biopython: Cock PA, Antao T, Chang JT, Chapman BA, Cox CJ, Dalke A,
+[INFO] [pyani.scripts.pyani_script]: 	Friedberg I, Hamelryck T, Kauff F, Wilczynski B and de Hoon MJL
+[INFO] [pyani.scripts.pyani_script]: 	(2009) Biopython: freely available Python tools for computational
+[INFO] [pyani.scripts.pyani_script]: 	molecular biology and bioinformatics. Bioinformatics, 25, 1422-1423
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Downloading genomes from NCBI
+[INFO] [pyani.scripts]: Creating output directory brenneria_genomes
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Setting Entrez email address: leighton.pritchard@strath.ac.uk
+[INFO] [pyani.scripts.subcommands.subcmd_download]: API key recovered from /home/lp40866/.ncbi/api_key
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Taxon IDs received: ['71655']
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Downloading contigs for Taxon ID ['7163851', '7050021', '4728681', '2921781', '2921771', '2579121', '2579111', '2579101', '2022701', '2022671', '2022621', '2022611', '1817351', '1694641', '1192161', '361581', '319008']
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving eSummary information for UID 7163851
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving URLs for GCF_013155275.1_ASM1315527v1
+[INFO] [pyani.scripts.subcommands.subcmd_download]: MD5 hash check passed
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Label and class file entries
+	Label: afcb1d7d4e84f547576dabfc86499484	GCF_013155275.1_ASM1315527v1_genomic	B. sp. hezel4-2-4 hezel4-2-4
+	Class: afcb1d7d4e84f547576dabfc86499484	GCF_013155275.1_ASM1315527v1_genomic	Brenneria sp. hezel4-2-4
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving eSummary information for UID 7050021
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving URLs for GCF_012932875.1_ASM1293287v1
+[INFO] [pyani.scripts.subcommands.subcmd_download]: MD5 hash check passed
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Label and class file entries
+	Label: e1b092c6ce04f7bf4660e144e58476f8	GCF_012932875.1_ASM1293287v1_genomic	B. salicis ATCC 15712
+	Class: e1b092c6ce04f7bf4660e144e58476f8	GCF_012932875.1_ASM1293287v1_genomic	Brenneria salicis
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving eSummary information for UID 4728681
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving URLs for GCF_008710095.1_ASM871009v1
+[INFO] [pyani.scripts.subcommands.subcmd_download]: MD5 hash check passed
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Label and class file entries
+	Label: 2b67b0791add308ab6f842625d753c2d	GCF_008710095.1_ASM871009v1_genomic	B. sp. L3-3HA L3-3HA
+	Class: 2b67b0791add308ab6f842625d753c2d	GCF_008710095.1_ASM871009v1_genomic	Brenneria sp. L3-3HA
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving eSummary information for UID 2921781
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving URLs for GCF_005484965.1_ASM548496v1
+[INFO] [pyani.scripts.subcommands.subcmd_download]: MD5 hash check passed
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Label and class file entries
+	Label: 1fada4d456a80149d496b72225e58127	GCF_005484965.1_ASM548496v1_genomic	B. nigrifluens ATCC 13028
+	Class: 1fada4d456a80149d496b72225e58127	GCF_005484965.1_ASM548496v1_genomic	Brenneria nigrifluens
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving eSummary information for UID 2921771
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving URLs for GCF_005484945.1_ASM548494v1
+[INFO] [pyani.scripts.subcommands.subcmd_download]: MD5 hash check passed
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Label and class file entries
+	Label: b9f1c98d564fb2160207841f34cfef95	GCF_005484945.1_ASM548494v1_genomic	B. rubrifaciens 6D370
+	Class: b9f1c98d564fb2160207841f34cfef95	GCF_005484945.1_ASM548494v1_genomic	Brenneria rubrifaciens
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving eSummary information for UID 2579121
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving URLs for GCF_003115855.1_ASM311585v1
+[INFO] [pyani.scripts.subcommands.subcmd_download]: MD5 hash check passed
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Label and class file entries
+	Label: b357df924727f1421bac5381730c977d	GCF_003115855.1_ASM311585v1_genomic	B. sp. CFCC 11842 CFCC 11842
+	Class: b357df924727f1421bac5381730c977d	GCF_003115855.1_ASM311585v1_genomic	Brenneria sp. CFCC 11842
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving eSummary information for UID 2579111
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving URLs for GCF_003115835.1_ASM311583v1
+[INFO] [pyani.scripts.subcommands.subcmd_download]: MD5 hash check passed
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Label and class file entries
+	Label: 6e4c9c5109f7b33a188f87beb66f1870	GCF_003115835.1_ASM311583v1_genomic	B. nigrifluens LMG 2694
+	Class: 6e4c9c5109f7b33a188f87beb66f1870	GCF_003115835.1_ASM311583v1_genomic	Brenneria nigrifluens
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving eSummary information for UID 2579101
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving URLs for GCF_003115845.1_ASM311584v1
+[INFO] [pyani.scripts.subcommands.subcmd_download]: MD5 hash check passed
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Label and class file entries
+	Label: 9c019ceff72f16eb652147231ff1779b	GCF_003115845.1_ASM311584v1_genomic	B. roseae LMG 27714
+	Class: 9c019ceff72f16eb652147231ff1779b	GCF_003115845.1_ASM311584v1_genomic	Brenneria roseae
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving eSummary information for UID 2022701
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving URLs for GCF_003666235.1_ASM366623v1
+[INFO] [pyani.scripts.subcommands.subcmd_download]: MD5 hash check passed
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Label and class file entries
+	Label: 19e57de82b91d31fddab3f302cacfb7c	GCF_003666235.1_ASM366623v1_genomic	B. goodwinii FRB141
+	Class: 19e57de82b91d31fddab3f302cacfb7c	GCF_003666235.1_ASM366623v1_genomic	Brenneria goodwinii
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving eSummary information for UID 2022671
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving URLs for GCF_003666245.1_ASM366624v1
+[INFO] [pyani.scripts.subcommands.subcmd_download]: MD5 hash check passed
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Label and class file entries
+	Label: 00d38e2f9b40700e39afca170779f0bd	GCF_003666245.1_ASM366624v1_genomic	B. alni NCPPB 3934
+	Class: 00d38e2f9b40700e39afca170779f0bd	GCF_003666245.1_ASM366624v1_genomic	Brenneria alni
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving eSummary information for UID 2022621
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving URLs for GCF_003666165.1_ASM366616v1
+[INFO] [pyani.scripts.subcommands.subcmd_download]: MD5 hash check passed
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Label and class file entries
+	Label: f7f345ec15e3da661f8b2f320d65d241	GCF_003666165.1_ASM366616v1_genomic	B. salicis DSM 30166
+	Class: f7f345ec15e3da661f8b2f320d65d241	GCF_003666165.1_ASM366616v1_genomic	Brenneria salicis
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving eSummary information for UID 2022611
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving URLs for GCF_003666145.1_ASM366614v1
+[INFO] [pyani.scripts.subcommands.subcmd_download]: MD5 hash check passed
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Label and class file entries
+	Label: 5911ee50cb892537ee081bdc8d06e197	GCF_003666145.1_ASM366614v1_genomic	B. goodwinii FRB171
+	Class: 5911ee50cb892537ee081bdc8d06e197	GCF_003666145.1_ASM366614v1_genomic	Brenneria goodwinii
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving eSummary information for UID 1817351
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving URLs for GCF_003315515.1_ASM331551v1
+[INFO] [pyani.scripts.subcommands.subcmd_download]: MD5 hash check passed
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Label and class file entries
+	Label: a5736b184b6f44a58276a26ce9f75cae	GCF_003315515.1_ASM331551v1_genomic	B. salicis DSM 30166
+	Class: a5736b184b6f44a58276a26ce9f75cae	GCF_003315515.1_ASM331551v1_genomic	Brenneria salicis
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving eSummary information for UID 1694641
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving URLs for GCF_003115815.1_ASM311581v1
+[INFO] [pyani.scripts.subcommands.subcmd_download]: MD5 hash check passed
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Label and class file entries
+	Label: eeeb26490013be29eddbc2b9ed900753	GCF_003115815.1_ASM311581v1_genomic	B. roseae LMG 27715
+	Class: eeeb26490013be29eddbc2b9ed900753	GCF_003115815.1_ASM311581v1_genomic	Brenneria roseae
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving eSummary information for UID 1192161
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving URLs for GCF_002291445.1_ASM229144v1
+[INFO] [pyani.scripts.subcommands.subcmd_download]: MD5 hash check passed
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Label and class file entries
+	Label: 71e684b7b235e89dac68273163ef35a6	GCF_002291445.1_ASM229144v1_genomic	B. goodwinii FRB141
+	Class: 71e684b7b235e89dac68273163ef35a6	GCF_002291445.1_ASM229144v1_genomic	Brenneria goodwinii
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving eSummary information for UID 361581
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving URLs for GCF_001049335.1_B_goodwinii_PB
+[INFO] [pyani.scripts.subcommands.subcmd_download]: MD5 hash check passed
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Label and class file entries
+	Label: 541e70c32eae7cc6e899cb90112e908b	GCF_001049335.1_B_goodwinii_PB_genomic	B. goodwinii OBR1
+	Class: 541e70c32eae7cc6e899cb90112e908b	GCF_001049335.1_B_goodwinii_PB_genomic	Brenneria goodwinii
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving eSummary information for UID 319008
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Retrieving URLs for GCF_000225565.1_ASM22556v1
+[INFO] [pyani.scripts.subcommands.subcmd_download]: MD5 hash check passed
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Label and class file entries
+	Label: 8ac8fdf119f1e97fe67ac6a26a2a41dd	GCF_000225565.1_ASM22556v1_genomic	B. sp. EniD312 EniD312
+	Class: 8ac8fdf119f1e97fe67ac6a26a2a41dd	GCF_000225565.1_ASM22556v1_genomic	Brenneria sp. EniD312
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Writing classes file to brenneria_genomes/classes.txt
+[INFO] [pyani.scripts.subcommands.subcmd_download]: Writing labels file to brenneria_genomes/labels.txt
+[INFO] [pyani.scripts.pyani_script]: Completed. Time taken: 56.320
