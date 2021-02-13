@@ -4,7 +4,7 @@ This repository contains supporting material relating to `pyani` analyses of the
 
 > Hugovieux-Cotte-Pattat, N., Jacot-des-Combes, C., Briolay, J. & Pritchard, L. (2021) "Proposal for the creation of a new genus *Paradisiaca* gen. nov., reclassification of *Dickeya paradisiaca* (Samson et al. 2005) as *Paradisiaca victoria* sp. nov. and description of a new species *Paradisiaca keenii* sp. nov." *Int. J. Syst. Evol. Microbiol.*
 
-A single `pyani` v0.3 analysis was run on 2020-11-23, including 135 publicly-available genomes of *Dickeya* and *Brenneria* spp. downloaded from NCBI. The commands used were:
+A single `pyani` v0.3 analysis was run on 2020-11-23 (run 1), including 135 publicly-available genomes of *Dickeya* and *Brenneria* spp. downloaded from NCBI. A re-analysis of the genomes for figure 3 was run on 2021-01-26. The commands used were:
 
 ```bash
 pyani download -v -l 00_download.log --email leighton.pritchard@strath.ac.uk -t 204037 dickeya_genomes
@@ -35,7 +35,7 @@ $ tree -d
 └── pyanidb      # pyani database generated for these comparisons
 ```
 
-If you would like to recreate plots from this analysis, you can do so with a command such as:
+If you would like to recreate plots from this analysis, you can do so with a command like:
 
 ```bash
 pyani plot -v -l my_plot.log --dbpath pyanidb/pyanidb \
