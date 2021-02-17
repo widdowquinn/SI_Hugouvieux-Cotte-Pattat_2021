@@ -2,7 +2,7 @@
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4546299.svg)](https://doi.org/10.5281/zenodo.4546299)
 
-This repository contains supporting material relating to `pyani` analyses of the *Dickeya*/*Paradisiaca* genus, as reported in:
+This repository contains supporting material relating to phylogenetic and `pyani` analyses of the *Dickeya*/*Paradisiaca* genus, as reported in:
 
 > Hugovieux-Cotte-Pattat, N., Jacot-des-Combes, C., Briolay, J. & Pritchard, L. (2021) "Proposal for the creation of a new genus *Paradisiaca* gen. nov., reclassification of *Dickeya paradisiaca* (Samson et al. 2005) as *Paradisiaca victoria* sp. nov. and description of a new species *Paradisiaca keenii* sp. nov." *Int. J. Syst. Evol. Microbiol.*
 
