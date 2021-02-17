@@ -32,10 +32,11 @@ $ tree -d
 ├── figure_3     # pyani output generated for figure 3
 ├── figure_S2    # pyani output generated for figure S2
 ├── figures      # PDF files of annotated figures 3 and S2
-└── pyanidb      # pyani database generated for these comparisons
+├── pyanidb      # pyani database generated for these comparisons
+└── sequences    # FASTA sequences for 16S and gapA trees
 ```
 
-If you would like to recreate plots from this analysis, you can do so with a command like:
+If you would like to recreate ANIm plots from this analysis, you can do so in `pyani` v0.3 with a command like:
 
 ```bash
 pyani plot -v -l my_plot.log --dbpath pyanidb/pyanidb \
