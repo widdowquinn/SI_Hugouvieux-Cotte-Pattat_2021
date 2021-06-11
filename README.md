@@ -46,7 +46,7 @@ $ tree -d
 
 ## Reproducing Analyses
 
-### Whole-genome ANIm of *Dickeya* and *Brenneria*, Figures 2 and S3
+### 1. Whole-genome ANIm of *Dickeya* and *Brenneria*, Figures 2 and S3
 
 The complete procedure for producing figures 2 and S3, the whole-genome ANIm of *Dickeya* and *Brenneria* spp. is described in [`figure2.md`](./figure2.md).
 
@@ -54,7 +54,7 @@ The graphical outputs relevant to figure 2 and figure S3 are presented in the di
 
 The complete ANIm analysis, including input data, is provided in the compressed `.zip` archive `figure_2_figure_S3.zip`, which may be downloaded from [DOI:10.6084/m9.figshare.14770197](https://doi.org/10.6084/m9.figshare.14770197).
 
-### Phylogenomic analysis of *Pectobacteriaceae*, Figure 3
+### 2. Phylogenomic analysis of *Pectobacteriaceae*, Figure 3
 
 The complete phylogenomic analysis of 49 *Pectobacteriaceae* genomes, including input data, is provided in the compressed `.zip` archive `phylogenomics.zip`, which may be downloaded from [](). The complete procedure is outlined in the file [`phylogenomics_text.md`](./phylogenomics_text.md). The procedure is described fully in the `README.md` file of the `phylogenomics.zip` archive, and all scripts are provided in the `scripts/` subdirectory of the same archive.
 

@@ -1,0 +1,35 @@
+
+RAxML-NG v. 1.0.2 released on 22.02.2021 by The Exelixis Lab.
+Developed by: Alexey M. Kozlov and Alexandros Stamatakis.
+Contributors: Diego Darriba, Tomas Flouri, Benoit Morel, Sarah Lutteropp, Ben Bettisworth.
+Latest version: https://github.com/amkozlov/raxml-ng
+Questions/problems/suggestions? Please visit: https://groups.google.com/forum/#!forum/raxml
+
+System: Intel Xeon E3-12xx v2 (Ivy Bridge, IBRS), 1 cores, 62 GB RAM
+
+RAxML-NG was called at 07-Jun-2021 15:27:11 as follows:
+
+raxml-ng --rfdist --tree tree/03_infer.raxml.mlTrees --prefix tree/06_rfdist
+
+Analysis options:
+  run mode: RF distance computation
+  start tree(s): user
+  random seed: 1623079631
+  SIMD kernels: AVX
+  parallelization: coarse-grained (auto), NONE/sequential
+
+Reading input trees from file: tree/03_infer.raxml.mlTrees
+Loaded 20 trees with 49 taxa.
+
+Average absolute RF distance in this tree set: 0.000000
+Average relative RF distance in this tree set: 0.000000
+Number of unique topologies in this tree set: 1
+
+Pairwise RF distances saved to: /home/lpritc/musicola/tree/06_rfdist.raxml.rfDistances
+
+Execution log saved to: /home/lpritc/musicola/tree/06_rfdist.raxml.log
+
+Analysis started: 07-Jun-2021 15:27:11 / finished: 07-Jun-2021 15:27:11
+
+Elapsed time: 0.007 seconds
+

@@ -1,0 +1,79 @@
+[INFO] [pyani.scripts.pyani_script]: Processed arguments: Namespace(citation=False, classfname=PosixPath('classes.txt'), debug=False, disable_tqdm=False, func=<function subcmd_index at 0x7f9ed0676430>, indir=PosixPath('genomes'), labelfname=PosixPath('labels.txt'), logfile=PosixPath('logs/pyani_02_index.log'), verbose=False)
+[INFO] [pyani.scripts.pyani_script]: command-line: /Users/lpritc/opt/anaconda3/envs/pyani_py38/bin/pyani index genomes -l logs/pyani_02_index.log
+[INFO] [pyani.scripts.pyani_script]: CITATION INFO
+[INFO] [pyani.scripts.pyani_script]: If you use pyani in your work, please cite the following publication:
+[INFO] [pyani.scripts.pyani_script]: 	Pritchard, L., Glover, R. H., Humphris, S., Elphinstone, J. G.,
+[INFO] [pyani.scripts.pyani_script]: 	& Toth, I.K. (2016) 'Genomics and taxonomy in diagnostics for
+[INFO] [pyani.scripts.pyani_script]: 	food security: soft-rotting enterobacterial plant pathogens.'
+[INFO] [pyani.scripts.pyani_script]: 	Analytical Methods, 8(1), 12–24. http://doi.org/10.1039/C5AY02550H
+[INFO] [pyani.scripts.pyani_script]: DEPENDENCIES
+[INFO] [pyani.scripts.pyani_script]: The authors of pyani gratefully acknowledge its dependence on
+[INFO] [pyani.scripts.pyani_script]: the following bioinformatics software:
+[INFO] [pyani.scripts.pyani_script]: 	MUMmer3: S. Kurtz, A. Phillippy, A.L. Delcher, M. Smoot, M. Shumway,
+[INFO] [pyani.scripts.pyani_script]: 	C. Antonescu, and S.L. Salzberg (2004), 'Versatile and open software
+[INFO] [pyani.scripts.pyani_script]: 	for comparing large genomes' Genome Biology 5:R12
+[INFO] [pyani.scripts.pyani_script]: 	BLAST+: Camacho C., Coulouris G., Avagyan V., Ma N., Papadopoulos J.,
+[INFO] [pyani.scripts.pyani_script]: 	Bealer K., & Madden T.L. (2008) 'BLAST+: architecture and applications.'
+[INFO] [pyani.scripts.pyani_script]: 	BMC Bioinformatics 10:421.
+[INFO] [pyani.scripts.pyani_script]: 	BLAST: Altschul, S.F., Madden, T.L., Schäffer, A.A., Zhang, J.,
+[INFO] [pyani.scripts.pyani_script]: 	Zhang, Z., Miller, W. & Lipman, D.J. (1997) 'Gapped BLAST and PSI-BLAST:
+[INFO] [pyani.scripts.pyani_script]: 	a new generation of protein database search programs.' Nucleic Acids Res.
+[INFO] [pyani.scripts.pyani_script]: 	25:3389-3402
+[INFO] [pyani.scripts.pyani_script]: 	Biopython: Cock PA, Antao T, Chang JT, Chapman BA, Cox CJ, Dalke A,
+[INFO] [pyani.scripts.pyani_script]: 	Friedberg I, Hamelryck T, Kauff F, Wilczynski B and de Hoon MJL
+[INFO] [pyani.scripts.pyani_script]: 	(2009) Biopython: freely available Python tools for computational
+[INFO] [pyani.scripts.pyani_script]: 	molecular biology and bioinformatics. Bioinformatics, 25, 1422-1423
+[INFO] [pyani.scripts.subcommands.subcmd_index]: Scanning directory genomes for FASTA files
+[INFO] [pyani.scripts.subcommands.subcmd_index]: Found FASTA files:
+[INFO] [pyani.scripts.subcommands.subcmd_index]: Writing hash to genomes/GCF_003725615.1_ASM372561v1_genomic.md5
+[INFO] [pyani.scripts.subcommands.subcmd_index]: Writing hash to genomes/GCF_003115815.1_ASM311581v1_genomic.md5
+[INFO] [pyani.scripts.subcommands.subcmd_index]: Writing hash to genomes/GCF_000784735.1_ASM78473v1_genomic.md5
+[INFO] [pyani.scripts.subcommands.subcmd_index]: Writing hash to genomes/GCF_003666245.1_ASM366624v1_genomic.md5
+[INFO] [pyani.scripts.subcommands.subcmd_index]: Writing hash to genomes/GCF_003269835.1_ASM326983v1_genomic.md5
+[INFO] [pyani.scripts.subcommands.subcmd_index]: Writing hash to genomes/GCF_014854755.1_ASM1485475v1_genomic.md5
+[INFO] [pyani.scripts.subcommands.subcmd_index]: Writing hash to genomes/GCF_003115845.1_ASM311584v1_genomic.md5
+[INFO] [pyani.scripts.subcommands.subcmd_index]: Writing hash to genomes/GCF_001742185.1_ASM174218v1_genomic.md5
+[INFO] [pyani.scripts.subcommands.subcmd_index]: Writing hash to genomes/GCF_003403135.1_ASM340313v1_genomic.md5
+[INFO] [pyani.scripts.subcommands.subcmd_index]: Writing hash to genomes/GCF_000749915.1_ASM74991v1_genomic.md5
+[INFO] [pyani.scripts.subcommands.subcmd_index]: Writing hash to genomes/GCF_001049335.1_B_goodwinii_PB_genomic.md5
+[INFO] [pyani.scripts.subcommands.subcmd_index]: Writing hash to genomes/GCF_003269815.1_ASM326981v1_genomic.md5
+[INFO] [pyani.scripts.subcommands.subcmd_index]: Writing hash to genomes/GCF_000025065.1_ASM2506v1_genomic.md5
+[INFO] [pyani.scripts.subcommands.subcmd_index]: Writing hash to genomes/GCF_013334185.1_ASM1333418v1_genomic.md5
+[INFO] [pyani.scripts.subcommands.subcmd_index]: Writing hash to genomes/GCF_000365305.1_DDI453_v1.0_genomic.md5
+[INFO] [pyani.scripts.subcommands.subcmd_index]: Writing hash to genomes/GCF_003725575.1_ASM372557v1_genomic.md5
+[INFO] [pyani.scripts.subcommands.subcmd_index]: Writing hash to genomes/GCF_000758345.1_ASM75834v1_genomic.md5
+[INFO] [pyani.scripts.subcommands.subcmd_index]: Writing hash to genomes/GCF_000808415.1_ASM80841v1_genomic.md5
+[INFO] [pyani.scripts.subcommands.subcmd_index]: Writing hash to genomes/GCF_000023545.1_ASM2354v1_genomic.md5
+[INFO] [pyani.scripts.subcommands.subcmd_index]: Writing hash to genomes/GCF_000023565.1_ASM2356v1_genomic.md5
+[INFO] [pyani.scripts.subcommands.subcmd_index]: Writing hash to genomes/GCF_000406145.1_DDA898_1.0_genomic.md5
+[INFO] [pyani.scripts.subcommands.subcmd_index]: Writing hash to genomes/GCF_000749865.1_ASM74986v1_genomic.md5
+[INFO] [pyani.scripts.subcommands.subcmd_index]: Writing hash to genomes/GCF_002111635.1_ASM211163v1_genomic.md5
+[INFO] [pyani.scripts.subcommands.subcmd_index]: Writing hash to genomes/GCF_000147055.1_ASM14705v1_genomic.md5
+[INFO] [pyani.scripts.subcommands.subcmd_index]: Writing hash to genomes/GCF_000400505.1_DPA2511_1.0_genomic.md5
+[INFO] [pyani.scripts.subcommands.subcmd_index]: Writing hash to genomes/GCF_002111585.1_ASM211158v1_genomic.md5
+[INFO] [pyani.scripts.subcommands.subcmd_index]: Writing hash to genomes/GCF_014855505.1_ASM1485550v1_genomic.md5
+[INFO] [pyani.scripts.subcommands.subcmd_index]: Writing hash to genomes/GCF_003049785.1_ASM304978v1_genomic.md5
+[INFO] [pyani.scripts.subcommands.subcmd_index]: Writing hash to genomes/GCF_000740965.1_ASM74096v1_genomic.md5
+[INFO] [pyani.scripts.subcommands.subcmd_index]: Writing hash to genomes/GCF_003934295.1_ASM393429v1_genomic.md5
+[INFO] [pyani.scripts.subcommands.subcmd_index]: Writing hash to genomes/GCF_002812485.1_ASM281248v1_genomic.md5
+[INFO] [pyani.scripts.subcommands.subcmd_index]: Writing hash to genomes/GCF_018361125.1_ASM1836112v1_genomic.md5
+[INFO] [pyani.scripts.subcommands.subcmd_index]: Writing hash to genomes/GCF_002887555.1_ASM288755v1_genomic.md5
+[INFO] [pyani.scripts.subcommands.subcmd_index]: Writing hash to genomes/GCF_900095885.1_Daq1742_genomic.md5
+[INFO] [pyani.scripts.subcommands.subcmd_index]: Writing hash to genomes/GCF_000406105.1_DCH402_1.0_genomic.md5
+[INFO] [pyani.scripts.subcommands.subcmd_index]: Writing hash to genomes/GCF_007858975.2_ASM785897v2_genomic.md5
+[INFO] [pyani.scripts.subcommands.subcmd_index]: Writing hash to genomes/GCF_001644705.1_ASM164470v1_genomic.md5
+[INFO] [pyani.scripts.subcommands.subcmd_index]: Writing hash to genomes/GCF_003718335.1_ASM371833v1_genomic.md5
+[INFO] [pyani.scripts.subcommands.subcmd_index]: Writing hash to genomes/GCF_003666145.1_ASM366614v1_genomic.md5
+[INFO] [pyani.scripts.subcommands.subcmd_index]: Writing hash to genomes/GCF_000406165.1_DZE2538_1.0_genomic.md5
+[INFO] [pyani.scripts.subcommands.subcmd_index]: Writing hash to genomes/GCF_002111625.1_ASM211162v1_genomic.md5
+[INFO] [pyani.scripts.subcommands.subcmd_index]: Writing hash to genomes/GCF_000696465.1_ASM69646v1_genomic.md5
+[INFO] [pyani.scripts.subcommands.subcmd_index]: Writing hash to genomes/GCF_002291445.1_ASM229144v1_genomic.md5
+[INFO] [pyani.scripts.subcommands.subcmd_index]: Writing hash to genomes/GCF_002111595.1_ASM211159v1_genomic.md5
+[INFO] [pyani.scripts.subcommands.subcmd_index]: Writing hash to genomes/GCF_000011605.1_ASM1160v1_genomic.md5
+[INFO] [pyani.scripts.subcommands.subcmd_index]: Writing hash to genomes/GCF_900195285.2_Pc0421_3_genomic.md5
+[INFO] [pyani.scripts.subcommands.subcmd_index]: Writing hash to genomes/GCF_000406065.1_DCH516_1.0_genomic.md5
+[INFO] [pyani.scripts.subcommands.subcmd_index]: Writing hash to genomes/GCF_000754685.1_ASM75468v1_genomic.md5
+[INFO] [pyani.scripts.subcommands.subcmd_index]: Writing hash to genomes/GCF_900107885.1_IMG-taxon_2597490349_annotated_assembly_genomic.md5
+[INFO] [pyani.scripts.subcommands.subcmd_index]: Writing classes file to genomes/classes.txt
+[INFO] [pyani.scripts.subcommands.subcmd_index]: Writing labels file to genomes/labels.txt
+[INFO] [pyani.scripts.pyani_script]: Completed. Time taken: 1.989
