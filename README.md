@@ -2,14 +2,14 @@
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4546299.svg)](https://doi.org/10.5281/zenodo.4546299)
 
-This repository contains supporting material relating to phylogenetic and `pyani` analyses of the *Dickeya*/*Paradisiaca* genus, as reported in:
+This repository contains supporting material relating to phylogenetic and `pyani` analyses of the *Dickeya*/*Musicola* genus, as reported in:
 
-> Hugovieux-Cotte-Pattat, N., Jacot-des-Combes, C., Briolay, J. & Pritchard, L. (2021) "Proposal for the creation of a new genus *Paradisiaca* gen. nov., reclassification of *Dickeya paradisiaca* (Samson et al. 2005) as *Paradisiaca victoria* sp. nov. and description of a new species *Paradisiaca keenii* sp. nov." *Int. J. Syst. Evol. Microbiol.*
+> Hugovieux-Cotte-Pattat, N., Jacot-des-Combes, C., Briolay, J. & Pritchard, L. (2021) "Proposal for the creation of a new genus *Musicola* gen. nov., reclassification of *Dickeya paradisiaca* (Samson et al. 2005) as *Musicola paradisiaca* comb. nov. and description of a new species *Musicola keenii* sp. nov." *Int. J. Syst. Evol. Microbiol.*
 
 ------------------------------------------
 ## How to use this repository
 
-You can use this repository like a website, to browse and see how we performed the analysis, or you can download it to inspect, verify, reproduce, or build on our analysis.
+You can use this repository like a [website](https://widdowquinn.github.io/SI_Hugouvieux-Cotte-Pattat_2021/), to browse and see how we performed the analysis, or you can download it to inspect, verify, reproduce, or build on our analysis.
 
 ### Downloading this repository
 
@@ -51,6 +51,6 @@ This repository is licensed under the [MIT License](./LICENSE), and copyright (C
 
 If you use elements of this repository in your own work, we would be grateful if you please cite the following publication, and the URL/DOI of this repository, as "appropriate credit".
 
-> Hugovieux-Cotte-Pattat, N., Jacot-des-Combes, C., Briolay, J. & Pritchard, L. (2021) "Proposal for the creation of a new genus *Paradisiaca* gen. nov., reclassification of *Dickeya paradisiaca* (Samson et al. 2005) as *Paradisiaca victoria* sp. nov. and description of a new species *Paradisiaca keenii* sp. nov." *Int. J. Syst. Evol. Microbiol.*
+> Hugovieux-Cotte-Pattat, N., Jacot-des-Combes, C., Briolay, J. & Pritchard, L. (2021) "Proposal for the creation of a new genus *Musicola* gen. nov., reclassification of *Dickeya paradisiaca* (Samson et al. 2005) as *Musicola paradisiaca* comb. nov. and description of a new species *Musicola keenii* sp. nov." *Int. J. Syst. Evol. Microbiol.*
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4546299.svg)](https://doi.org/10.5281/zenodo.4546299)
