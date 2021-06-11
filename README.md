@@ -1,4 +1,4 @@
-# README.md SI_Hugovieux-Cotte-Pattat_2021
+# SI_Hugovieux-Cotte-Pattat_2021
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4546299.svg)](https://doi.org/10.5281/zenodo.4546299)
 
@@ -6,46 +6,51 @@ This repository contains supporting material relating to phylogenetic and `pyani
 
 > Hugovieux-Cotte-Pattat, N., Jacot-des-Combes, C., Briolay, J. & Pritchard, L. (2021) "Proposal for the creation of a new genus *Paradisiaca* gen. nov., reclassification of *Dickeya paradisiaca* (Samson et al. 2005) as *Paradisiaca victoria* sp. nov. and description of a new species *Paradisiaca keenii* sp. nov." *Int. J. Syst. Evol. Microbiol.*
 
-A single `pyani` v0.3 analysis was run on 2020-11-23 (run 1), including 135 publicly-available genomes of *Dickeya* and *Brenneria* spp. downloaded from NCBI. A re-analysis of the genomes for figure 3 was run on 2021-01-26. The commands used were:
+------------------------------------------
+## How to use this repository
+
+You can use this repository like a website, to browse and see how we performed the analysis, or you can download it to inspect, verify, reproduce, or build on our analysis.
+
+### Downloading this repository
+
+You can use `git` to *clone* this repository to your local hard drive:
 
 ```bash
-pyani download -v -l 00_download.log --email leighton.pritchard@strath.ac.uk -t 204037 dickeya_genomes
-pyani download -v -l 01_download.log --email leighton.pritchard@strath.ac.uk \
-    -t 71655 brenneria_genomes
-pyani createdb -v -l 02_createdb.log -f
-mkdir combined_genomes
-ln -s dickeya_genomes/* combined_genomes/
-ln -s brenneria_genomes/* combined_genomes/
-cat dickeya_genomes/labels.txt brenneria_genomes/labels.txt combined_genomes/labels.txt
-cat dickeya_genomes/classes.txt brenneria_genomes/labels.txt combined_genomes/classes.txt
-pyani anim -v -l 03_anim.log --scheduler SGE combined_genomes/ combined_ANIM --name Combined_Dickeya_Brenneria_run_1 --labels combined_genomes/labels.txt --classes combined_genomes/classes.txt
-pyani plot -v -l 04_plot.log --method seaborn --formats png,pdf combined_ANIM/ 1
-# Symbolic links to the genomes for figure 3 were created in figure_3_genomes/
-# along with corresponding reduced labels.txt and classes.txt files
-pyani anim -v -l 06_anim.log --scheduler SGE figure_3_genomes/ figure_3_ANIm/ --name figure3_Dickeya --labels figure_3_genomes/labels.txt --classes figure_3_genomes/classes.txt
-pyani plot -v -l 07_plot.log --method seaborn --formats png,pdf figure_3_ANIm/ 3
+git clone git@github.com:widdowquinn/SI_Hugouvieux-Cotte-Pattat_2021.git
 ```
+
+Or you can download it as a compressed `.zip` archive from [this link](https://github.com/widdowquinn/SI_Hugouvieux-Cotte-Pattat_2021/archive/refs/heads/main.zip).
+
+---------------------------------------------
 
 ## Directory Structure
 
 ```bash
 $ tree -d
 .
-├── figure_3     # pyani output generated for figure 3
-├── figure_S2    # pyani output generated for figure S2
-├── figures      # PDF files of annotated figures 3 and S2
-├── pyanidb      # pyani database generated for these comparisons
-└── sequences    # FASTA sequences for 16S and gapA trees
+├── figure_2     # pyani output generated for figure 2
+├── figure_S3    # pyani output generated for figure S3
+├── figures      # PDF files of annotated figures 2 and S3
+├── pyanidb      # pyani database generated for figures S2/S3
+└── sequences    # FASTA sequences used to produce 16S and gapA trees
 ```
 
-If you would like to recreate ANIm plots from this analysis, you can do so in `pyani` v0.3 with a command like:
+## Reproducing Analyses
 
-```bash
-pyani plot -v -l my_plot.log --dbpath pyanidb/pyanidb \
-    --method seaborn --formats png,pdf \
-    figure_3_ANIm/ 3
-```
+### Whole-genome ANIm of *Dickeya* and *Brenneria*, Figures 2 and S3
 
-## Licence
+The complete procedure for producing figures 2 and S3, the whole-genome ANIm of *Dickeya* and *Brenneria* spp., is described in [`figure2.md`](./figure2.md).
 
-This repository is licensed under the [MIT License](./LICENSE)
+The graphical outputs relevant to figure 2 and figure 3 are presented in the directories `figure_2` and `figure_S3`, respectively, and `pyani` database (readable by `pyani` v0.3) generated in the analysis is located in `pyanidb/pyanidb_fig2_figS3`.
+
+The complete ANIm analysis, including input data, is provided in the compressed `.zip` archive `figure_2_figure_S3.zip`.
+
+### Licensing
+
+This repository is licensed under the [MIT License](./LICENSE), and copyright (C) 2020-2021 University of Strathclyde
+
+If you use elements of this repository in your own work, we would be grateful if you please cite the following publication, and the URL/DOI of this repository, as "appropriate credit".
+
+> Hugovieux-Cotte-Pattat, N., Jacot-des-Combes, C., Briolay, J. & Pritchard, L. (2021) "Proposal for the creation of a new genus *Paradisiaca* gen. nov., reclassification of *Dickeya paradisiaca* (Samson et al. 2005) as *Paradisiaca victoria* sp. nov. and description of a new species *Paradisiaca keenii* sp. nov." *Int. J. Syst. Evol. Microbiol.*
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4546299.svg)](https://doi.org/10.5281/zenodo.4546299)
