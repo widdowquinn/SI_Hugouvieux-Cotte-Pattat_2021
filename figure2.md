@@ -24,16 +24,34 @@ pyani createdb -v -l 02_createdb.log -f
 mkdir combined_genomes
 ln -s dickeya_genomes/* combined_genomes/
 ln -s brenneria_genomes/* combined_genomes/
-cat dickeya_genomes/labels.txt brenneria_genomes/labels.txt combined_genomes/labels.txt
-cat dickeya_genomes/classes.txt brenneria_genomes/labels.txt combined_genomes/classes.txt
+cat dickeya_genomes/labels.txt brenneria_genomes/labels.txt \
+  combined_genomes/labels.txt
+cat dickeya_genomes/classes.txt brenneria_genomes/labels.txt \
+  combined_genomes/classes.txt
 
 # Perform ANIm on all genomes and plot output for figure S2
-pyani anim -v -l 03_anim.log --scheduler SGE combined_genomes/ combined_ANIM --name Combined_Dickeya_Brenneria_run_1 --labels combined_genomes/labels.txt --classes combined_genomes/classes.txt
-pyani plot -v -l 04_plot.log --method seaborn --formats png,pdf combined_ANIM/ 1
+pyani anim -v -l 03_anim.log \
+  --scheduler SGE \
+  combined_genomes/ combined_ANIM \
+  --name Combined_Dickeya_Brenneria_run_1 \
+  --labels combined_genomes/labels.txt \
+  --classes combined_genomes/classes.txt
+pyani plot -v -l 04_plot.log \
+  --method seaborn \
+  --formats png,pdf \
+  combined_ANIM/ 1
 
 # Symbolic links to the genomes for figure 2 are created in figure_2_genomes/
 # along with corresponding reduced labels.txt and classes.txt files
 # Perform ANIm on this reduced set
-pyani anim -v -l 06_anim.log --scheduler SGE figure_2_genomes/ figure_2_ANIm/ --name figure2_Dickeya --labels figure_2_genomes/labels.txt --classes figure_2_genomes/classes.txt
-pyani plot -v -l 07_plot.log --method seaborn --formats png,pdf figure_2_ANIm/ 3
+pyani anim -v -l 06_anim.log \
+  --scheduler SGE \
+  figure_2_genomes/ figure_2_ANIm/ \
+  --name figure2_Dickeya \
+  --labels figure_2_genomes/labels.txt \
+  --classes figure_2_genomes/classes.txt
+pyani plot -v -l 07_plot.log \
+  --method seaborn \
+  --formats png,pdf \
+  figure_2_ANIm/ 3
 ```
