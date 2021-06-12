@@ -56,7 +56,7 @@ The complete ANIm analysis, including input data, is provided in the compressed 
 
 ### 2. Phylogenomic analysis of *Pectobacteriaceae*, Figure 3
 
-The complete phylogenomic analysis of 49 *Pectobacteriaceae* genomes, including input data, is provided in the compressed `.zip` archive `phylogenomics.zip`, which may be downloaded from [](). The complete procedure is outlined in the file [`phylogenomics_text.md`](./phylogenomics_text.md). The procedure is described fully in the `README.md` file of the `phylogenomics.zip` archive, and all scripts are provided in the `scripts/` subdirectory of the same archive.
+The complete phylogenomic analysis of 49 *Pectobacteriaceae* genomes, including input data, is provided in the compressed `.zip` archive `phylogenomics.zip`, which may be downloaded from [10.6084/m9.figshare.14770647](https://doi.org/10.6084/m9.figshare.14770647). The complete procedure is outlined in the file [`phylogenomics_text.md`](./phylogenomics_text.md). The procedure is described fully in the `README.md` file of the `phylogenomics.zip` archive, and all scripts are provided in the `scripts/` subdirectory of the same archive.
 
 Figure 3, the phylogenetic tree describing the relationship of *Musicola* to the other *Pectobacteriaceae* is provided in the `figures/` directory, and corresponds to the file `figures/core_genome_tree_bs_colour.pdf` in the `phylogenomics.zip` dataset. The concatenated single-copy orthologues, partition file, `raxml-ng` output, log files, and `FigTree` output are in the `figure_3/` subdirectory.
 
