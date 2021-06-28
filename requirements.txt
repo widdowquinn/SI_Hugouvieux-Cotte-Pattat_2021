@@ -1,0 +1,8 @@
+biopython
+ncbi-genome-download
+orthofinder
+parsnp
+prodigal
+pyani
+tqdm
+t-coffee

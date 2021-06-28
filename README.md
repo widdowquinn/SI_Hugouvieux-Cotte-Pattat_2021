@@ -29,6 +29,32 @@ Please raise an issue at the corresponding `GitHub` page:
 
 - [Issues for this repository](https://github.com/widdowquinn/SI_Hugouvieux-Cotte-Pattat_2021/issues)
 
+-------------------------------
+
+## Reproducing analyses (quickster)
+
+You can use this archive to browse, validate, reproduce, or build on the phylogenomics analysis for the Hugovieux-Cotte-Pattat *et al.* (2021) manuscript. We recommend creating a `conda` environment specific for this activity, for example using the commands:
+
+```bash
+conda create --name musicola python=3.8 -y
+conda activate musicola
+conda install --file requirements.txt -y
+```
+
+All scripts used to generate the phylogenomic analysis are found in the `scripts/` subdirectory, and can be run in order to regenerate the analysis:
+
+```bash
+scripts/download_genomes.sh
+scripts/annotate_genomes.sh
+scripts/run_anim.sh
+scripts/find_orthologues.sh
+scripts/align_scos.sh
+python scripts/extract_cds.py
+scripts/backtranslate.sh
+python scripts/concatenate_cds.py
+scripts/build_tree.sh
+```
+
 
 ---------------------------------------------
 
