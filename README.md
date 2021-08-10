@@ -55,12 +55,21 @@ python scripts/concatenate_cds.py
 scripts/build_tree.sh
 ```
 
-
 ---------------------------------------------
 
 ## Directory Structure
 
 ```bash
+$ tree -d
+.
+├── figure_2     # pyani output generated for figure 2
+├── figure_3     # phylogenomics support for figure 3
+├── figure_S3    # pyani output generated for figure S3
+├── figure_S4    # pyani output generated for figure S4
+├── figures      # PDF files of annotated figures from the publication
+├── pyanidb      # pyani database generated for figures 2,S3,S4
+├── scripts      # scripts used for phylogenomics and other analyses
+└── sequences    # FASTA sequences used to produce 16S and gapA trees
 $ tree -d
 .
 ├── figure_2     # pyani output generated for figure 2
