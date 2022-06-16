@@ -31,7 +31,7 @@ Please raise an issue at the corresponding `GitHub` page:
 
 -------------------------------
 
-## Reproducing analyses (quickster)
+## Reproducing analyses (quickstart)
 
 You can use this archive to browse, validate, reproduce, or build on the phylogenomics analysis for the Hugovieux-Cotte-Pattat *et al.* (2021) manuscript. We recommend creating a `conda` environment specific for this activity, for example using the commands:
 
